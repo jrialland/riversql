@@ -1,9 +1,10 @@
 
 package com.riversql;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -17,6 +18,8 @@ import javax.servlet.http.HttpSession;
 
 @SuppressWarnings("serial")
 public abstract class DoServlet extends HttpServlet {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(DoServlet.class);
 
     @SuppressWarnings("unchecked")
     @Override
@@ -80,8 +83,7 @@ public abstract class DoServlet extends HttpServlet {
         try {
             execute(req, resp, em, et);
         } catch (Exception ex) {
-            //Logger.getLogger(DoServlet.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println(ex.toString());
+            LOGGER.error(DoServlet.class.getName(), ex);
         }
     }
 	

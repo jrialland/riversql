@@ -73,16 +73,19 @@ import com.riversql.actions.SourcesPage;
 import com.riversql.actions.TestSourceConnection;
 import com.riversql.actions.UpdateDriver;
 import com.riversql.actions.UpdateSource;
-
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 @SuppressWarnings("serial")
 public class Do extends DoServlet {
-	
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(DoServlet.class);
+
     Map<String, Class<? extends JSONAction>> jsonActionMap;
+
     Map<String, Class<? extends IPageAction>> pageActionMap;
-    //Map<String, Class<? extends IFileUploadAction>> fileUploadActionMap;
+
 
     @Override
     public void init(ServletConfig config) throws ServletException {
@@ -160,14 +163,6 @@ public class Do extends DoServlet {
 
         pageActionMap=Collections.unmodifiableMap(tmp2);
 
-        /*
-        HashMap<String, Class<? extends IFileUploadAction>> tmp3 = new HashMap<String, Class<? extends IFileUploadAction>>();
-        tmp3.put("excelExport",ExcelExport.class );
-        tmp3.put("pdfExport", PdfExport.class);
-        tmp3.put("csvExport", CsvExport.class);
-        fileUploadActionMap=Collections.unmodifiableMap(tmp3);
-
-        */
     }
 
     @Override
@@ -192,7 +187,7 @@ public class Do extends DoServlet {
                                 obj.put("result",objsr);
                 }
                 catch (Exception e) {
-                        //e.printStackTrace();
+                        LOGGER.error("While handling action '"+action+"'", e);
                         if(et!=null && et.isActive())
                                 et.rollback();
                         try {
@@ -200,6 +195,7 @@ public class Do extends DoServlet {
                                 obj.put("success",false);
                                 obj.put("error",e.toString());
                         } catch (JSONException e1) {
+                            LOGGER.error("JSON Error", e1);
                         }
 
                 }finally{
@@ -219,7 +215,7 @@ public class Do extends DoServlet {
                                 iPageAction.execute(req, resp, em,et);
                                 et.commit();
                         }catch(Exception e){
-                                //e.printStackTrace();
+                            LOGGER.error("While handling page action", e);
                                 //TODO return page with error
                                 if(et!=null && et.isActive())
                                         et.rollback();
@@ -233,15 +229,23 @@ public class Do extends DoServlet {
 
                                         req.setAttribute("error",sw.toString());
                                         req.getRequestDispatcher("error.jsp").forward(req, resp);
-                                }catch(Exception e1){}
+                                }catch(Exception e1){
+                                    LOGGER.error("", e1);
+                                }
                         }finally{
                                 IDManager.set(null);
                                 if(em!=null)
                                         em.close();
                         }
-                }else
-                        if(em!=null)
-                                em.close();
+                }else {
+                    if(em!=null)
+                        em.close();
+
+                    throw new IllegalArgumentException("No such action : " + action);
+
+                }
+
+
         }
     }
 }
