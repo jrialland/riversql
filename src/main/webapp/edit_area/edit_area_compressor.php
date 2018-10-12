@@ -250,7 +250,7 @@
 			// load the css
 			$this->datas.= sprintf("editAreaLoader.iframe_css= \"<style>%s</style>\";\n", $this->get_css_content("edit_area.css"));
 					
-		//	$this->datas= "function editArea(){};editArea.prototype.loader= function(){alert('bouhbouh');} var a= new editArea();a.loader();";
+		//	$this->datas= "function editArea(){};editArea.prototype.loader= function(){} var a= new editArea();a.loader();";
 					
 		}
 		

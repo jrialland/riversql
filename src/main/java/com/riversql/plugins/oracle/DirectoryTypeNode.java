@@ -1,76 +1,75 @@
-
 package com.riversql.plugins.oracle;
+
+import com.riversql.dbtree.IStructureNode;
+import com.riversql.dbtree.SchemaNode;
+import com.riversql.plugin.BasePluginType;
+import com.riversql.sql.SQLConnection;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import com.riversql.sql.SQLConnection;
-import com.riversql.dbtree.IStructureNode;
-import com.riversql.dbtree.SchemaNode;
-import com.riversql.plugin.BasePluginType;
-
-public class DirectoryTypeNode extends BasePluginType implements IStructureNode{
-
-	
-	 
-	@Override
-	public void load(){	
-		if(loaded )
-			return;
-		ResultSet rs=null;
-		PreparedStatement ps=null;
-		try{
-			final String sql="SELECT  object_name,status, created,last_ddl_time,timestamp "+  
-			" FROM sys.all_objects where owner=? "+  
-			" and object_type='DIRECTORY' order by 1 asc";
-			ps=conn.prepareStatement(sql);
-			String owner=getOwner();
-			ps.setString(1,owner);
-			rs=ps.executeQuery();
-			while(rs.next()){
-				String name2=rs.getString(1);
-				String status=rs.getString(2);
-				DirectoryNode dtNode=new DirectoryNode(this,name2,conn,status);
-				list.add(dtNode);
-			}
-	
-		}catch(Exception e){
-			list.clear();
-		}finally{
-			try{if(rs!=null)
-				rs.close();
-			}catch(Exception e){
-			}	
-			try{if(ps!=null)
-				ps.close();
-			}catch(Exception e){
-			}	
-		}		
-		loaded=true;
-	}
-	
-	private String getOwner() {
-		return parentNode.getName();
-	}
-
-	public DirectoryTypeNode(SchemaNode schemaNode,SQLConnection conn) {
-		super("Directory",schemaNode,conn);
-	}
+public class DirectoryTypeNode extends BasePluginType implements IStructureNode {
 
 
-	public String getCls() {
-		
-		return "objs";
-	}
+    public DirectoryTypeNode(SchemaNode schemaNode, SQLConnection conn) {
+        super("Directory", schemaNode, conn);
+    }
 
-	public String getType() {
-		
-		return "ora_directories";
-	}
+    @Override
+    public void load() {
+        if (loaded)
+            return;
+        ResultSet rs = null;
+        PreparedStatement ps = null;
+        try {
+            final String sql = "SELECT  object_name,status, created,last_ddl_time,timestamp " +
+                    " FROM sys.all_objects where owner=? " +
+                    " and object_type='DIRECTORY' order by 1 asc";
+            ps = conn.prepareStatement(sql);
+            String owner = getOwner();
+            ps.setString(1, owner);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                String name2 = rs.getString(1);
+                String status = rs.getString(2);
+                DirectoryNode dtNode = new DirectoryNode(this, name2, conn, status);
+                list.add(dtNode);
+            }
 
-	public boolean isLeaf() {
-		
-		return false;
-	}
+        } catch (Exception e) {
+            list.clear();
+        } finally {
+            try {
+                if (rs != null)
+                    rs.close();
+            } catch (Exception e) {
+            }
+            try {
+                if (ps != null)
+                    ps.close();
+            } catch (Exception e) {
+            }
+        }
+        loaded = true;
+    }
+
+    private String getOwner() {
+        return parentNode.getName();
+    }
+
+    public String getCls() {
+
+        return "objs";
+    }
+
+    public String getType() {
+
+        return "ora_directories";
+    }
+
+    public boolean isLeaf() {
+
+        return false;
+    }
 
 }

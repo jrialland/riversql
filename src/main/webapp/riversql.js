@@ -1031,7 +1031,6 @@ function submitFailed(form, action) {
 	Ext.MessageBox.show( {
 		title :'Error',
         width:500,
-        multiline:true,
 		msg :failureMessage,
 		buttons :Ext.MessageBox.OK,
 		icon :Ext.MessageBox.ERROR

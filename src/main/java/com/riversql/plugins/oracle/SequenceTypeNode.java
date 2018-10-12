@@ -1,15 +1,19 @@
 package com.riversql.plugins.oracle;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-
-import com.riversql.sql.SQLConnection;
 import com.riversql.dbtree.IStructureNode;
 import com.riversql.dbtree.SchemaNode;
 import com.riversql.plugin.BasePluginType;
+import com.riversql.sql.SQLConnection;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class SequenceTypeNode extends BasePluginType implements IStructureNode {
 
+
+    public SequenceTypeNode(SchemaNode schemaNode, SQLConnection conn) {
+        super("Sequence", schemaNode, conn);
+    }
 
     @Override
     public void load() {
@@ -51,10 +55,6 @@ public class SequenceTypeNode extends BasePluginType implements IStructureNode {
 
     private String getOwner() {
         return parentNode.getName();
-    }
-
-    public SequenceTypeNode(SchemaNode schemaNode, SQLConnection conn) {
-        super("Sequence", schemaNode, conn);
     }
 
     public String getCls() {

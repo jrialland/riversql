@@ -1,4 +1,3 @@
-
 package com.riversql.actions.export.impl;
 
 import com.itextpdf.text.Element;
@@ -23,12 +22,10 @@ public class CSVTableExporter implements ITableExporter {
 
     private final String qualifiedName;
     ByteArrayOutputStream baos = new ByteArrayOutputStream(1024 * 1024);
-
+    IColumnFormatter formatters[];
     private int row = 1;
     private int column = 0;
     private int columnCount = 0;
-    IColumnFormatter formatters[];
-
     private StringBuffer sb = null;
     private char separator = ',';
 

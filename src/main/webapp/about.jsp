@@ -29,7 +29,6 @@
 	<tr><td><b>The user interface</b></td><td><a href="http://extjs.com/"><img alt="" style="vertical-align:middle;border:0"  src="images/extjs2.png"/></a> </td></tr>
 	<tr><td><b>The icon set</b></td><td><a href="http://www.famfamfam.com/"><img alt="" style="vertical-align:middle;border:0"  src="images/famfamfam.png"/></a> </td></tr>
 	<tr><td><b>Apache libraries</b></td><td><a href="http://commons.apache.org/collections/"><img alt="" style="vertical-align:middle;border:0"  src="images/apache.png"/></a></td></tr>
-	<tr><td><b>Apache Log4je</b></td><td><a href="http://logging.apache.org/log4j/"><img alt="" style="vertical-align:middle;border:0"  src="images/log4j.jpg"/></a></td></tr>
 	<tr><td><b>Oracle Toplink Essentials</b> </td><td><a href="http://www.oracle.com/technology/products/ias/toplink/jpa/index.html"><img alt="" style="vertical-align:middle;border:0"  src="images/oralogo_small.gif"/></a></td></tr>
 	<tr><td><b>Open-jACOB Draw2D</b></td><td><a href="http://draw2d.org/draw2d/"><img alt="" style="vertical-align:middle;border:0" src="images/draw2d.png"/></a></td></tr>
 	<tr><td><b>EditArea</b></td><td><a href="http://www.cdolivet.com/index.php?page=editArea"><img alt="" style="vertical-align:middle;border:0" src="images/cdolivet.net.png"/></a></td></tr>
