@@ -1,0 +1,1959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="riversql:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="03824653-5f7f-4856-8f5d-486c9f02b588" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/riversql_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/riversql_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__avalon_framework_avalon_framework_4_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_itextpdf_itextpdf_5_5_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_yahoo_platform_yui_yuicompressor_2_4_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_persistence_api_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__logkit_logkit_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_44.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_5_FINAL.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__rhino_js_1_7R2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__toplink_essentials_toplink_essentials_2_1_03.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riversql.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen/create.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen/create.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen/menu.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen/menu.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen/page.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen/page.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence_toplink.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/ContextListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/Do.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/DoServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/IDManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/IFileUploadAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/IPageAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/JSONAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/JSONDispatchAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/Page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/Request.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/SessionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/WebSQLSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/AboutPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/ChangeCatalog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/CloseConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/CloseResultSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/CommitConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/ConfigPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/Connect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/CreateSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/CsvExport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/DatabaseInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/DeleteDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/DeleteSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/DoExport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/ExcelExport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/ExecuteSQL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/Export.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/ExportPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/ExportTablePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GenerateDDLAlterTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GenerateDDLCreateIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GenerateDDLCreateTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetAdditionalData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetColumnsForViewer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetConnectionStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetDatabaseMetadata.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetDatabases.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetDrivers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetExportedKeys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetFK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetGrants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetIndexes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetJSONObjectBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetJSONObjectInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetMeta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetPK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetPKForAlterTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetSources.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetTableColumns.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetTableColumnsForAlterTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetTableIndexesForAlterTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/GetTypesAlterTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/Import.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/PdfExport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/Ping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/PluginAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/Preview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/RedoQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/RollbackConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/SelectTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/SourcesPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/TestSourceConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/UpdateDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/UpdateSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/export/IColumnFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/export/ITableExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/export/impl/CSVTableExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/export/impl/ExcelTableExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/actions/export/impl/PDFTableExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/dao/DriversDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/dao/SourcesDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/AxionDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/DB2Dialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/DBSyntaxGeneratorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/DaffodilDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/DerbyDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/DialectFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/FirebirdDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/FrontBaseDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/H2Dialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/HADBDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/HSQLDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/IDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/ISyntaxGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/InformixDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/IngresDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/InterbaseDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/MAXDBDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/MSSQLSyntaxGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/McKoiDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/MySQLDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/MySqlSyntaxGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/Oracle9iDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/OracleSyntaxGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/PointbaseDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/PostgreSQLDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/PostgreSQLSyntaxGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/ProgressDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/SQLServerDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/SybaseDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/databases/TimesTenDialect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/dbtree/CatalogNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/dbtree/CatalogOfSchemasNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/dbtree/ColumnModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/dbtree/DBNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/dbtree/DatabaseNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/dbtree/IStructureNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/dbtree/SQLSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/dbtree/SchemaNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/dbtree/TableNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/dbtree/TablesNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/entities/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/entities/Source.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/filters/GZIPFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/filters/GZIPResponseStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/filters/GZIPResponseWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/filters/GZippedStaticResourceFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/filters/StaticResourceFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/id/IHasIdentifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/id/IIdentifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/id/IIdentifierFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/id/IntegerIdentifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/id/IntegerIdentifierFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/persist/IValidatable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/persist/ValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugin/BasePluginType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugin/Plugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugin/PluginManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/FunctionNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/FunctionTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/MySQLPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/ProcedureNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/ProcedureTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/TriggerNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/TriggersNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/UserNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/UsersNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/CreateDBDDL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/DropTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/EmptyTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/GetCollations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/GetUserInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/GetUserPrivileges.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/RenameTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/Show.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/ShowCharacterSets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/ShowCollations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/ShowDatabases.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/ShowEngines.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/ShowPrivileges.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/ShowProcesses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/ShowStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/ShowTableStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/mysql/actions/ShowVariables.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/DirectoryNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/DirectoryTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/FunctionNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/FunctionTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/JavaClassNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/JavaClassTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/JavaNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/JavaResourceNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/JavaResourceTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/JavaTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/LibraryNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/LibraryTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/ObjectBodyNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/ObjectNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/ObjectTypeBodyNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/ObjectTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/OraclePlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/PackageBodyNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/PackageBodyTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/PackageNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/PackageTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/ProcedureNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/ProcedureTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/SequenceNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/SequenceTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/TriggerNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/TriggerTypeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/DependentObjects.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/Directories.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/DirectoryInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/ExtractDLL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/FunctInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/FunctionParametersDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/Functions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/JavaClassInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/JavaClasses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/JavaInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/JavaResInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/JavaResources.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/JavaSources.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/Libraries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/LibraryInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/ObjectBodyTypeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/ObjectBodyTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/ObjectTypeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/ObjectTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/PackageBodys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/Packages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/PkgBodyInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/PkgInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/ProcInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/ProcedureParametersDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/Procedures.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/SeqDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/SeqInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/Sequences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/SystemOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/TriggerDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/TriggerInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/plugins/oracle/actions/Triggers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/DataTypeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/DatabaseObjectInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/DatabaseObjectType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/ForeignKeyColumnInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/ForeignKeyInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/I18NStrings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/IDatabaseObjectInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/IDatabaseObjectTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/IProcedureInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/IQueryTokenizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/ISQLAlias.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/ISQLDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/ITableInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/ITokenizerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/IUDTInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/JDBCTypeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/PrimaryKeyInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/ProcedureInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/ProgressCallBack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/QueryTokenizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/ResultSetColumnReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/SQLConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/SQLConnectionState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/SQLDatabaseMetaData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/SQLDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/SQLDriverProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/SQLDriverPropertyCollection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/SQLUtilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/TableColumnInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/TableInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/UDTInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/sql/dbobj/BestRowIdentifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/util/BaseException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/util/BaseRuntimeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/util/I18NStrings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/util/IMessageHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/util/ISessionProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/util/PropertyChangeReporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/util/StringManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/util/StringManagerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/util/StringUtilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/utils/ResultSetReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/riversql/utils/SQLExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/Base64.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/json/JSONArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/json/JSONException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/json/JSONObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/json/JSONString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/json/JSONTokener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.fbprefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.settings/org.eclipse.jst.jsp.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.settings/org.eclipse.wst.html.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.settings/org.eclipse.wst.xsl.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/FileUploadField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/META-INF/persistence_toplink.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-beanutils-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-collections-3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/db2jcc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/db2jcc_license_cu.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/derby.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/iText-5.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/log4j.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.10-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/poi-3.5-FINAL-20090928.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/proguard.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/riversql.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/toplink-essentials.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/upload/upload folder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/XMLSerializer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/about.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build/draw_all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build/ext_all-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build/ext_all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build/riversql_all-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build/riversql_all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/config.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dbgraphics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/draw2d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/draw2d_patched.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/autocompletion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/edit_area.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/edit_area.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/edit_area_compressor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/edit_area_full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/edit_area_full_with_plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/edit_area_functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/edit_area_loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/elements_functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/highlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/autocompletion.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/fullscreen.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/go_to_line.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/help.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/highlight.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/load.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/move.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/newdocument.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/processing.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/redo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/reset_highlight.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/save.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/search.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/smooth_selection.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/statusbar_resize.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/undo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/images/word_wrap.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/keyboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/dk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/langs/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/license_apache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/license_bsd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/license_lgpl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/manage_area.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/charmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/css/charmap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/images/charmap.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/jscripts/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/dk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/langs/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/charmap/popup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/css/test.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/images/test.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/dk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/langs/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/plugins/test/test2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/basic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/brainfuck.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/coldfusion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/cpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/java.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/pas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/perl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/php.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/python.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/robotstxt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/ruby.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/sql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/tsql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/vb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/reg_syntax/xml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/regexp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/resize_area.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/search_replace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit_area/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/exportTable.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/CHANGES_ext-3.1.0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/DDView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/INCLUDE_ORDER.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/Multiselect.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/Multiselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/adapter/ext/ext-base-debug-w-comments.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/adapter/ext/ext-base-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/adapter/ext/ext-base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/adapter/jquery/ext-jquery-adapter-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/adapter/jquery/ext-jquery-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/adapter/prototype/ext-prototype-adapter-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/adapter/prototype/ext-prototype-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/adapter/yui/ext-yui-adapter-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/adapter/yui/ext-yui-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/bufferview.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/ext-all-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/ext-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/ext.jsb2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/gpl-3.0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/cmp-foundation-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/cmp-foundation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/data-foundation-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/data-foundation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/data-grouping-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/data-grouping.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/data-json-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/data-json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/data-list-views-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/data-list-views.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/data-xml-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/data-xml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/direct-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/direct.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/ext-dd-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/ext-dd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/ext-foundation-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/ext-foundation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-buttons-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-charts-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-forms-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-forms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-grid-editor-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-grid-editor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-grid-foundation-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-grid-foundation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-grid-grouping-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-grid-grouping.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-grid-property-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-grid-property.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-history-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-history.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-menu-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-tabs-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-tips-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-tips.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-toolbars-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-toolbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-tree-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/pkg-tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/resizable-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/resizable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/state-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/window-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/pkgs/window.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/charts.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/debug.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/ext-all-notheme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/ext-all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/reset-min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/riversql-min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/riversql.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/borders.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/box.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/core.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/date-picker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/dd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/debug.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/list-view.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/panel-reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/progress.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/qtips.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/resizable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/toolbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/structure/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/borders.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/box.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/core.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/date-picker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/dd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/debug.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/list-view.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/progress.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/qtips.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/resizable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/toolbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/visual/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/xtheme-blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/css/xtheme-gray.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/expressinstall.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/box/corners-blue.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/box/corners.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/box/l-blue.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/box/l.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/box/r-blue.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/box/r.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/box/tb-blue.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/box/tb.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/button/arrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/button/btn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/button/group-cs.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/button/group-lr.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/button/group-tb.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/button/s-arrow-b-noline.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/button/s-arrow-b.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/button/s-arrow-bo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/button/s-arrow-noline.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/button/s-arrow-o.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/button/s-arrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/dd/drop-add.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/dd/drop-no.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/dd/drop-yes.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/editor/tb-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/checkbox.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/clear-trigger.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/clear-trigger.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/date-trigger.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/date-trigger.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/error-tip-corners.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/exclamation.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/radio.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/search-trigger.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/search-trigger.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/text-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/trigger-tpl.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/trigger.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/form/trigger.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/gradient-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/arrow-left-white.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/arrow-right-white.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/col-move-bottom.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/col-move-top.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/columns.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/dirty.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/done.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/drop-no.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/drop-yes.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/footer-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/grid-blue-hd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/grid-blue-split.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/grid-hrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/grid-loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/grid-split.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/grid-vista-hd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/grid3-hd-btn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/grid3-hrow-over.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/grid3-hrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/grid3-special-col-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/grid3-special-col-sel-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/group-by.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/group-collapse.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/group-expand-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/group-expand.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/hd-pop.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/hmenu-asc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/hmenu-desc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/hmenu-lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/hmenu-lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/hmenu-unlock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/hmenu-unlock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/invalid_line.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/mso-hd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/nowait.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/page-first-disabled.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/page-first.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/page-last-disabled.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/page-last.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/page-next-disabled.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/page-next.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/page-prev-disabled.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/page-prev.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/pick-button.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/refresh.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/row-check-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/row-expand-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/row-over.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/row-sel.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/sort-hd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/sort_asc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/sort_desc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/grid/wait.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/collapse.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/expand.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/gradient-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/mini-bottom.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/mini-left.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/mini-right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/mini-top.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/ns-collapse.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/ns-expand.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/panel-close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/panel-title-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/panel-title-light-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/stick.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/stuck.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/tab-close-on.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/layout/tab-close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/menu/checked.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/menu/group-checked.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/menu/item-over.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/menu/menu-parent.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/menu/menu.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/menu/unchecked.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/panel/corners-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/panel/left-right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/panel/light-hd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/panel/tool-sprite-tpl.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/panel/tool-sprites.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/panel/tools-sprites-trans.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/panel/top-bottom.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/panel/top-bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/panel/white-corners-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/panel/white-left-right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/panel/white-top-bottom.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/progress/progress-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/qtip/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/qtip/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/qtip/tip-anchor-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/qtip/tip-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/shadow-c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/shadow-lr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/shared/blue-loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/shared/calendar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/shared/glass-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/shared/hd-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/shared/large-loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/shared/left-btn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/shared/loading-balls.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/shared/right-btn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/shared/warning.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/e-handle-dark.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/e-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/ne-handle-dark.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/ne-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/nw-handle-dark.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/nw-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/s-handle-dark.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/s-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/se-handle-dark.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/se-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/square.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/sw-handle-dark.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/sizer/sw-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/slider/slider-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/slider/slider-thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/slider/slider-v-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/slider/slider-v-thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/scroll-left.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/scroll-right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/scroller-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/tab-btm-inactive-left-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/tab-btm-inactive-right-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/tab-btm-left-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/tab-btm-over-left-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/tab-btm-over-right-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/tab-btm-right-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/tab-close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/tab-strip-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/tab-strip-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/tab-strip-btm-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tabs/tabs-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/toolbar/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/toolbar/btn-arrow-light.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/toolbar/btn-arrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/toolbar/btn-over-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/toolbar/gray-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/toolbar/more.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/toolbar/tb-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/toolbar/tb-btn-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/toolbar/tb-xl-btn-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/toolbar/tb-xl-sep.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/arrows.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/drop-add.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/drop-between.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/drop-no.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/drop-over.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/drop-under.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/drop-yes.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/elbow-end-minus-nl.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/elbow-end-minus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/elbow-end-plus-nl.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/elbow-end-plus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/elbow-end.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/elbow-line.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/elbow-minus-nl.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/elbow-minus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/elbow-plus-nl.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/elbow-plus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/elbow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/folder-open.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/folder.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/leaf.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/tree/s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/window/icon-error.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/window/icon-info.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/window/icon-question.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/window/icon-warning.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/window/left-corners.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/window/left-corners.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/window/left-right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/window/left-right.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/window/right-corners.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/window/right-corners.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/window/top-bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/default/window/top-bottom.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/button/btn-arrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/button/btn-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/button/btn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/button/group-cs.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/button/group-lr.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/button/group-tb.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/gradient-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/panel/corners-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/panel/left-right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/panel/light-hd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/panel/tool-sprite-tpl.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/panel/tool-sprites.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/panel/tools-sprites-trans.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/panel/top-bottom.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/panel/top-bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/panel/white-corners-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/panel/white-left-right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/panel/white-top-bottom.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/qtip/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/qtip/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/qtip/tip-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/tabs/scroll-left.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/tabs/scroll-right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/tabs/scroller-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/tabs/tab-btm-inactive-left-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/tabs/tab-btm-inactive-right-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/tabs/tab-btm-left-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/tabs/tab-btm-right-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/tabs/tab-close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/tabs/tab-strip-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/tabs/tab-strip-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/tabs/tab-strip-btm-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/tabs/tabs-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/toolbar/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/toolbar/btn-arrow-light.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/toolbar/btn-arrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/toolbar/btn-over-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/toolbar/gray-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/toolbar/more.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/toolbar/tb-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/toolbar/tb-btn-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/window/icon-error.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/window/icon-info.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/window/icon-question.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/window/icon-warning.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/window/left-corners.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/window/left-corners.pspimage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/window/left-right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/window/right-corners.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/gray/window/top-bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/basic-dialog/bg-center.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/basic-dialog/bg-left.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/basic-dialog/bg-right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/basic-dialog/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/basic-dialog/collapse.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/basic-dialog/dlg-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/basic-dialog/e-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/basic-dialog/expand.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/basic-dialog/hd-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/basic-dialog/s-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/basic-dialog/se-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/basic-dialog/w-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/gradient-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/grid/grid-split.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/grid/grid-vista-hd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/layout/collapse.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/layout/expand.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/layout/gradient-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/layout/ns-collapse.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/layout/ns-expand.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/layout/panel-close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/layout/panel-title-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/layout/panel-title-light-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/layout/stick.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/layout/tab-close-on.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/layout/tab-close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/qtip/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/qtip/tip-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/sizer/e-handle-dark.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/sizer/e-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/sizer/ne-handle-dark.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/sizer/ne-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/sizer/nw-handle-dark.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/sizer/nw-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/sizer/s-handle-dark.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/sizer/s-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/sizer/se-handle-dark.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/sizer/se-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/sizer/sw-handle-dark.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/sizer/sw-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/tabs/tab-btm-inactive-left-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/tabs/tab-btm-inactive-right-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/tabs/tab-btm-left-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/tabs/tab-btm-right-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/tabs/tab-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/toolbar/gray-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/images/vista/toolbar/tb-btn-sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/resources/resources.jsb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/core/ext-base-ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/core/ext-base-anim-extra.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/core/ext-base-anim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/core/ext-base-begin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/core/ext-base-dom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/core/ext-base-end.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/core/ext-base-event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/core/ext-base-point.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/core/ext-base-region.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/ext-base-dom-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/jquery-bridge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/prototype-bridge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/adapter/yui-bridge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/CompositeElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/CompositeElementLite-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/DomHelper-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Element-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Element.alignment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Element.dd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Element.fx-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Element.insertion-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Element.keys.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Element.legacy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Element.position-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Element.scroll-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Element.style-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Element.traversal-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/EventManager-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Ext-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/Template-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/CompositeElementLite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/DomHelper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/DomQuery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/Element.fx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/Element.insertion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/Element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/Element.position.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/Element.scroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/Element.style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/Element.traversal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/EventManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/Ext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/Fx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/core/core/Template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/Api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/ArrayReader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/ArrayStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/DataField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/DataProxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/DataReader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/DataWriter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/DirectProxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/DirectStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/GroupingStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/HttpProxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/JsonReader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/JsonStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/JsonWriter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/MemoryProxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/Record.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/Request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/Response.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/ScriptTagProxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/SortTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/Store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/StoreMgr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/Tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/XmlReader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/XmlStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/XmlWriter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/data/core/Connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/dd/DDCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/dd/DragSource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/dd/DragTracker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/dd/DragZone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/dd/DropTarget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/dd/DropZone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/dd/Registry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/dd/ScrollManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/dd/StatusProxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/direct/Direct.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/direct/Event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/direct/JsonProvider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/direct/PollingProvider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/direct/Provider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/direct/RemotingProvider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/direct/Transaction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-el_GR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-en_GB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-fr_CA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-gr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-no_NB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-no_NN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-pt_BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-pt_PT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-sr_RS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-sv_SE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-ukr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-vn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/locale/ext-lang-zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/state/CookieProvider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/state/Provider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/state/StateManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/CSS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/ClickRepeater.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/Cookies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/Date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/Format.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/History.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/KeyMap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/KeyNav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/MixedCollection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/Observable-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/TextMetrics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/UpdateManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/XTemplate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/core/DelayedTask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/core/JSON.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/core/Observable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/util/core/TaskMgr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Action.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/BoxComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/ButtonGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/ColorPalette.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/ComponentMgr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/CycleButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/DataView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/DatePicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Editor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/LoadMask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/MessageBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/PagingToolbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Panel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/PanelDD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/ProgressBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Resizable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Shadow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/SplitBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/SplitButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/TabPanel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Toolbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Viewport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/Window.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/WindowManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/chart/Chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/chart/EventProxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/chart/FlashComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/chart/swfobject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/Action.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/BasicForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/Checkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/CheckboxGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/Combo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/DateField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/DisplayField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/Field.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/FieldSet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/Form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/Hidden.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/HtmlEditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/Label.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/NumberField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/Radio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/RadioGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/TextArea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/TextField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/TimeField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/TriggerField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/form/VTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/AbstractSelectionModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/CellSelectionModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/CheckboxSelectionModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/Column.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/ColumnDD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/ColumnModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/ColumnSplitDD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/EditorGrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/GridDD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/GridEditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/GridPanel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/GridView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/GroupingView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/PropertyGrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/RowNumberer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/grid/RowSelectionModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/layout/AbsoluteLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/layout/AccordionLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/layout/AnchorLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/layout/BorderLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/layout/BoxLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/layout/CardLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/layout/ColumnLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/layout/ContainerLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/layout/FitLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/layout/FormLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/layout/TableLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/list/Column.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/list/ColumnResizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/list/ListView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/list/Sorter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/menu/BaseItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/menu/CheckItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/menu/ColorMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/menu/DateMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/menu/Item.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/menu/Menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/menu/MenuMgr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/menu/Separator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/menu/TextItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tips/QuickTip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tips/QuickTips.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tips/Tip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tips/ToolTip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tree/AsyncTreeNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tree/TreeDragZone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tree/TreeDropZone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tree/TreeEditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tree/TreeEventModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tree/TreeFilter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tree/TreeLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tree/TreeNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tree/TreeNodeUI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tree/TreePanel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tree/TreeSelectionModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ext3.1.0/src/widgets/tree/TreeSorter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/fileuploadfield.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/gridFactories.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/grid_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/grid_to_excel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/apache.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/axion.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/borland.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/firebirdsql.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/h2.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/ibm.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/mckoi.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/msdn.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/mysql.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/oracle.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/postgresql.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/progress.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ico/sun.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/Excel-16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/accept.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/application.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/application_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/application_cascade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/application_delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/application_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/application_view_detail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/application_view_tile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/application_xp_terminal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/arrow_refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/arrow_undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/attach.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/bomb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/cd_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/chart_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/chart_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/chart_pie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/cog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/control_play_blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/cut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/database.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/database_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/database_delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/database_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/database_error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/database_gear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/database_lightning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/database_refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/database_save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/database_table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/date.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/disconnect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/disk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/exclamation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/eye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/folder.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/folder_database.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/folder_page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/folder_page_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/font.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/grid.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/house.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/bottom2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/down2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/elbow-minus-nl.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/elbow-plus-nl.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/left2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/panel-handle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/right2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/row-editor-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/row-editor-btns.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/spinner-split.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/summary-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/summary-group-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/top2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/up2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/images/x-grouptabs-corners.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/information.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/key_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/key_delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/layout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/lightbulb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/lightbulb_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/lightning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/magnifier.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/package.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/package_green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/page_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/page_excel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/page_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/page_white_acrobat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/page_white_copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/page_white_database.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/page_white_excel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/post-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/printer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/report.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/resultset_first.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/resultset_last.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/resultset_next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/resultset_next2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/resultset_previous.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/script.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/script_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/script_code_red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/script_delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/script_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/script_lightning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/shape_move_backwards.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/shape_move_forwards.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/shape_square_delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/table_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/table_delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/table_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/table_key.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/table_multiple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/table_relationship.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/textfield_rename.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/tick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/time.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/transmit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/transmit_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/transmit_blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/transmit_delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/transmit_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/transmit_go.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/user_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/user_delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/user_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/user_go.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/user_suit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/wrench.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/wrench_orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/apache.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/cdolivet.net.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/draw2d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/extjs2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/famfamfam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/json160.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/log4j.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/oralogo_small.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/ItemSelector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/MultiSelect.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/MultiSelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/ext-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/ext-base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/moocanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/mootools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/mysql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/project.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/riversql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/servlets.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sources.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/wz_jsgraphics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/yuicompressor-2.4.2.jar" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="388508053">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="4" />
+          <entry key="java" value="2" />
+          <entry key="properties" value="2" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="4" />
+          <entry key="JAVA" value="2" />
+          <entry key="Properties" value="2" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="669" />
+          <entry key="properties" value="92" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="669" />
+          <entry key="Properties" value="92" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-45" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/riversql/ContextListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+              <folding>
+                <element signature="e#1827#1828#0" expanded="true" />
+                <element signature="e#1857#1858#0" expanded="true" />
+                <element signature="e#2032#2033#0" expanded="true" />
+                <element signature="e#2058#2059#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/toplink/essentials/toplink-essentials/2.1-03/toplink-essentials-2.1-03.jar!/oracle/toplink/essentials/sessions/DefaultConnector.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#1786#1787#0" expanded="true" />
+                <element signature="e#1858#1859#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/toplink/essentials/toplink-essentials/2.1-03/toplink-essentials-2.1-03.jar!/oracle/toplink/essentials/sessions/DatasourceLogin.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="167" selection-start-line="167" selection-end-line="167" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/toplink/essentials/toplink-essentials/2.1-03/toplink-essentials-2.1-03.jar!/oracle/toplink/essentials/internal/ejb/cmp3/EntityManagerSetupImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="503" column="111" selection-start-line="503" selection-start-column="90" selection-end-line="503" selection-end-column="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/database.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="61" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/riversql/actions/Import.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+              <folding>
+                <element signature="e#0#2757#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../otariequery/otariequery_npm_cypress" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../otariequery/trunk" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/riversql/actions/Import.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/riversql/ContextListener.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/database.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-152" />
+    <option name="y" value="157" />
+    <option name="width" value="1895" />
+    <option name="height" value="731" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="riversql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="riversql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="riversql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="riversql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="riversql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="riversql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="riversql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="riversql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="riversql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="riversql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="riversql" type="58d84e3e:PackageViewProjectNode" />
+              <item name="riversql" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539334423580" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="riversql:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_riversql" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="41223" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="riversql:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_riversql" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="41223" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03824653-5f7f-4856-8f5d-486c9f02b588" name="Default Changelist" comment="" />
+      <created>1539330553817</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539330553817</updated>
+      <workItem from="1539330558986" duration="3743000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3743000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <layout>
+      <window_info id="Persistence" side_tool="true" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.21405405" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32972974" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.7524324" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/toplink/essentials/toplink-essentials/2.1-03/toplink-essentials-2.1-03.jar!/oracle/toplink/essentials/sessions/DatasourceLogin.class</url>
+          <line>167</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>this.getDatabaseURL()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.getDriverURLHeader()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>emf</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence_toplink.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/riversql/actions/Import.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="e#0#2757#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/toplink/essentials/toplink-essentials/2.1-03/toplink-essentials-2.1-03.jar!/javax/persistence/EntityManagerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/riversql/ContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="e#1827#1828#0" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#2032#2033#0" expanded="true" />
+            <element signature="e#2058#2059#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/toplink/essentials/toplink-essentials/2.1-03/toplink-essentials-2.1-03.jar!/oracle/toplink/essentials/internal/ejb/cmp3/EntityManagerSetupImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="503" column="111" selection-start-line="503" selection-start-column="90" selection-end-line="503" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/toplink/essentials/toplink-essentials/2.1-03/toplink-essentials-2.1-03.jar!/oracle/toplink/essentials/sessions/DatasourceLogin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/toplink/essentials/toplink-essentials/2.1-03/toplink-essentials-2.1-03.jar!/oracle/toplink/essentials/sessions/DefaultConnector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#1786#1787#0" expanded="true" />
+            <element signature="e#1858#1859#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="61" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
