@@ -17,9 +17,17 @@ if [ "$warfile" == "" ]; then
 fi 
 
 exploded=$(echo $warfile|sed s/.war//)
-echo 'copying ' $exploded
 rm ./ROOT -rf
 cp $exploded ./ROOT -R
 
-now --public --token $NOW_TOKEN && now alias --token $NOW_TOKEN
+projectname=$(git config --local remote.origin.url | sed s_^.*github.com/__ | sed s-/-_-)
+
+cat > now.json << EOF
+{
+    "name": "$projectname",
+    "alias": "$projectname"
+}
+EOF
+
+#now --public --token $NOW_TOKEN && now alias --token $NOW_TOKEN
 
