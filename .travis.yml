@@ -2,19 +2,13 @@ sudo: false
 language: java
 jdk: oraclejdk8
 script: mvn clean package
-
-#gem install travis
-#travis encrypt NOW_TOKEN=super_secret --add env.global
-
+before_deploy: npm install -g now
+deploy:
+- provider: script
+  script: now --public --token $NOW_TOKEN && now alias --token $NOW_TOKEN
+  skip_cleanup: true
+  on:
+    master: true
 env:
   global:
-    - secure: mcUCykGm4bUZ3CaW6AxrIMFzuAYjA98VIz6YmYTmM0/8sp/B/54JtQS/j0ehCD6B5BwyW6diVcaQA2c7bovI23GyeTT+TgfkuKRkzDcoY51ZsMDdsflJ94zV7TEIS31eCeq42IBYdHZeVZp/L7EXOzFjVmvYhboJiwnsPybpCfpIH369fjYKuVmutccD890nP8Bzg8iegssVldgsqDagkuLy0wObAVH0FKnqiIPtFoMf3mDeVmK2AkF1Xri1edsPl4wDIu1Ko3RCRgfr6NxzuNSh6f4Z6zmJLB4ONkpb3fAa9Lt+VjJjdSjCBT1OGhJdP7NlO5vSnS5TCYvgFqNSXqqJx9BNzZ9/esszP7DJBe1yq1aNwAvJ7DlSzh5rvLyXR4VWHXRIR3hOWDTRwCsJQJctCLpbDAFJupuZDcvqvPNj8dY5MSCu6NroXMMFmxJHIt3Hdzr+hV9RNJkQRR4K5bR+ewbJ/6h9rjX6Ot6kIsjJkmEwx1jllxi4+gSRtNQ/O4NCi3fvHmpG2pCr7Jz0+eNL2d9wm4ZxX1s18ZSAZ5XcVJdx8zL4vjSnwAQoFXzmx0LcpK6knEgw/hsTFovSpe5p3oLcERfSd7GmPm84Qr8U4YFKXpeQlb9k5BK9MaQVqI4LyaM2h4Xx+wc0QlEQlUOfwD4B2XrAYXFIq1PAEic=
-
-before_deploy: npm install now --no-save # Install Now CLI on Travis
-deploy:
-  - provider: script
-    script: now --token $NOW_TOKEN && now alias --token $NOW_TOKEN
-    skip_cleanup: true
-    on:
-      master: true
-
+    secure: SsPu4JmgktLCbic2ljz9pRIafDZbjUkmjPCwRvbqsbpWB2iUx8z7jSh2OuLJdLKBeOifXSdX4a9IGoylPEXZ7tuuCQLFRgQVdiW3qAOP5Tgqwsvh76gBPxeZLXO1bQqp9icP2jzaNqZ88zNAqPCJ/lnMneaFyhPa8rlxGzrb9XMajrrh3y1gTxvGpNAE6KzRSvBq6/BoN7iLx3UNOVNgowQYqktLxzaOZOY4WSXF+jPplfQ0y0M+cprWs/c4nyF6aHJtU/J81qLkbhkNK1PhaYfb6SV/7YwX64sxLc1B2oq2BX+60txZWECvNKOI8gwdzxY448IU1JS5Dokq7cH/WH4zTkB6KqlmccMhfdfgCiPfuRqcZWU1szuweF7oXfqjBOP6m0zTVq+Jqq5f8//1HNyJIv4fNnmxVMvwe73IBH8bGYzDPEwI06nsvEt1MAa/T23ZYuKQnjyh3BUhBdELkO/+z+UbOmCXVR+HhOQAa5GqL3c2EfAronPlGp9vMMD+twGeuFFn5gUI4vJuQx5iPXO0+MdMYVrPgwN9B9r0FV/okxqVyREEW7tR5R8at+I4g+xcqz22n1Td4wlY8VhRQTmsDYxQ9S4Y/JlOIEyuWnuaf8HgoGck39Sz/g8YjlTAzTDXgqKzdvN97uG9qS7HdrixsUddqxREafsLNccfbV8=
