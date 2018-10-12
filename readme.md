@@ -13,3 +13,5 @@ Some evolutions around the original RiverSQL code, so I may use it in 2018.
 - Can Now start "configuration-free" (changed configuration storage database to hsql)
 
 => [Live demo here](https://jriallandriversql-mxdishptat.now.sh) <=
+
+![screenshot](https://raw.githubusercontent.com/jrialland/riversql/master/misc/screen/page.JPG)
