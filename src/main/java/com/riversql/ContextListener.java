@@ -1,6 +1,9 @@
 
 package com.riversql;
 
+import com.riversql.dao.DriversDAO;
+
+import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.servlet.ServletContext;
@@ -48,6 +51,11 @@ public class ContextListener implements ServletContextListener {
             EntityManagerFactory emf = createEntityManagerFactoryFromProperties(props);
             setEntityManagerFactory(emf);
             sc.setAttribute("emf", emf);
+
+            EntityManager em = emf.createEntityManager();
+            DriversDAO.initialize(em);
+            em.close();
+
         } catch (Exception e) {
             throw new IllegalStateException(e);
         }

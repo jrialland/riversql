@@ -53,19 +53,23 @@ public class Connect implements JSONAction {
         Driver driver=DriversDAO.getDriver(em,driverid);
         Source source=SourcesDAO.getSource(em,sourceid);
         ISQLDriver idriver=new SQLDriver();
+        idriver.setDriverClassName(driver.getDriverClassName());
 
         JSONObject obj=new JSONObject();
 
-        Class.forName(driver.getDriverClassName());
-        idriver.setDriverClassName(driver.getDriverClassName());
+        java.sql.Driver sqlDriver = (java.sql.Driver)Class.forName(driver.getDriverClassName()).newInstance();
+        DriverManager.registerDriver(sqlDriver);
+
+
         Connection _conn = DriverManager.getConnection(source.getJdbcUrl(),user,password);
         if(autocommit!=null){
                 _conn.setAutoCommit(true);
         }else{
                 _conn.setAutoCommit(false);
         }
+
         SQLConnection conn=new SQLConnection(_conn,null,idriver);
-        //sessions.getSqlsessions().add(new SQLSession(source.getSourceName(),conn));
+
         WebSQLSession sessions=(WebSQLSession)request.getSession(true).getAttribute("sessions");
         sessions.getSqlsessions().add(new SQLSession(sourceid,source.getSourceName()+" ("+IDManager.get().nextSessionID()+")",conn));
         obj.put("success",true);

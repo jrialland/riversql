@@ -460,8 +460,6 @@ function createPage() {
 	}
 
 	function loadFailed(proxy, options, response, error) {
-		var object = Ext.util.JSON.decode(response.responseText);
-
 		Ext.MessageBox.show( {
 			title :'Error Message',
 			msg :object.error,
@@ -485,14 +483,6 @@ function createPage() {
 			remove :true,
 			duration :1.5
 		});
-//		 if(window.console && window.console.firebug){
-//			 Ext.MessageBox.show({
-//			 title: 'Warning',
-//			 msg: 'Firebug is known to cause performance issues with Ext JS.',
-//			 buttons: Ext.MessageBox.OK,
-//			 icon: Ext.MessageBox.WARNING
-//			 });
-//		 }
 	}, 250);
 
 	Ext.TaskMgr.start({
@@ -1018,19 +1008,14 @@ function newdriversPanel() {
 }// End of newdriversPanel
 
 function submitFailed(form, action) {
+    console.trace();
+    console.log(form, action);
 
-	var failureMessage = "Error occurred.";
-	if (action.failureType == Ext.form.Action.LOAD_FAILURE) {
-		failureMessage = action.result.message;
-	} else if (action.failureType == Ext.form.Action.CONNECT_FAILURE) {
+	var failureMessage = action.result.message || action.result.error || "Error occurred.";
 
+	if (action.failureType == Ext.form.Action.CONNECT_FAILURE) {
 		failureMessage = "Status: " + action.response.status
 				+ ", Status Text: " + action.response.statusText;
-	}
-
-	else if (action.failureType == Ext.form.Action.SERVER_INVALID) {
-
-		failureMessage = action.result.message;
 	}
 
 	else if (action.failureType == Ext.form.Action.CLIENT_INVALID) {
@@ -1041,8 +1026,12 @@ function submitFailed(form, action) {
 		failureMessage = action.result.error;
 	}
 
+	console.log(failureMessage);
+
 	Ext.MessageBox.show( {
 		title :'Error',
+        width:500,
+        multiline:true,
 		msg :failureMessage,
 		buttons :Ext.MessageBox.OK,
 		icon :Ext.MessageBox.ERROR
@@ -2022,8 +2011,8 @@ SqlEditor = Ext.extend(Ext.form.Field,{
                 
                 this.textarea.dom.style.height=h + 'px';
                 this.textarea.dom.style.width=w + 'px';
-                var frame = document.getElementById("frame_"+this.textarea.id); 
-                //alert("frame "+this.textarea.id+ " " +frame);
+                var frame = document.getElementById("frame_"+this.textarea.id);
+
                 if (frame!=null) { 
 	                frame.style.height = h + 'px'; 
 	                frame.style.width = w + 'px';  
@@ -2637,7 +2626,7 @@ function createCustomizeImport(){
                                     filename = jsonobject.result.filename;
                                     csvseparator = Ext.getCmp("separator").getValue();
                                     fileencoding = Ext.getCmp("fileencoding").getValue();
-                                    //alert("Success"+jsonobject.result.filename);
+
                                     fileUploadPanel1.hide();
                                     fileUploadPanel2.show();
 
@@ -3336,6 +3325,7 @@ function openConnectionDialog(alias) {
 		dialogConnection.close();
 		databasesDataStore.reload();
 	}
+
 	dialogConnection.addButton('Connect', onsubmit, dialogConnection);
 
 	dlgConnectionForm.add(new Ext.form.TextField( {
@@ -4709,8 +4699,8 @@ function newPKForAlterTable(node, PKDef, dsPK, dsColumns) {
 
 function load_plugin_script(url_script){
 	if (loaded_plugin_scripts[url_script])
-		return;	
-	//alert("load: "+url);
+		return;
+
 	try{
 		var script= document.createElement("script");
 		script.type= "text/javascript";

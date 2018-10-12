@@ -25,7 +25,7 @@ public class GetSources implements JSONAction {
 		
 		for (Source source : SourcesDAO.getSources(em)) {
 			Driver driver=DriversDAO.getDriver(em, source.getDriverid());
-			String iconurl=driver.getIconurl();
+			String iconurl= driver == null ? "icons/exclamation.png" : driver.getIconurl();
 			JSONObject obj=new JSONObject();
 			obj.put("id", source.getId());
 			obj.put("iconurl", iconurl);

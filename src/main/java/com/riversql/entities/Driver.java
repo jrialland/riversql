@@ -11,23 +11,13 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @NamedQueries(value={
-		@NamedQuery(name="Driver.selectAllByUser",query="SELECT p FROM Driver p where p.userName=?1 order by  p.driverName "),
 		@NamedQuery(name="Driver.selectAll",query="SELECT p FROM Driver p order by  p.driverName")
 })
 
 @Entity
 @Table(name = "DRIVER")
 public class Driver {
-	
-	@Column(name = "USER_NAME",nullable=false,length=255)
-	String userName;
-	
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
+
 	@Column(length=255,nullable=false)
 	String driverName;
 	

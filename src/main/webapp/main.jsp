@@ -9,7 +9,7 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
 	<link rel="stylesheet" type="text/css" href="ext3.1.0/resources/css/riversql-min.css"/>
-        <link rel="stylesheet" type="text/css" href="MultiSelect.css"/>
+        <link rel="stylesheet" type="text/css" href="js/MultiSelect.css"/>
         <link rel="stylesheet" type="text/css" href="fileuploadfield.css"/>
 	<link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
 
@@ -173,12 +173,6 @@
 
 <script type="text/javascript" src="FileUploadField.js"></script>
 
-<!--<script type="text/javascript" src="build/riversql_all-min.js"></script>  -->
-<!-- 
-
- <script type="text/javascript" src="dbgraphics.js"></script>
- <script type="text/javascript" src="gridFactories.js"></script>
- <script type="text/javascript" src="riversql.js"></script>-->
 
 <script type="text/javascript">
 //<![CDATA[	
