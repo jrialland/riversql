@@ -10,6 +10,7 @@ import org.json.JSONObject;
 import com.riversql.IDManager;
 import com.riversql.plugin.BasePluginType;
 import com.riversql.plugins.oracle.JavaResourceNode;
+import org.slf4j.LoggerFactory;
 
 
 public class JavaResInfo {
@@ -71,7 +72,7 @@ public class JavaResInfo {
 				
 			}
   		}catch(Exception e){
-  			e.printStackTrace();
+  			LoggerFactory.getLogger(getClass()).error("error", e);;
   		}finally{
   			try{if(rs!=null)
   				rs.close();

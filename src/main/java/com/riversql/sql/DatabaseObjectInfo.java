@@ -1,303 +1,274 @@
 package com.riversql.sql;
 
+import com.riversql.util.StringUtilities;
+
 import java.io.Serializable;
 import java.sql.SQLException;
 
-import com.riversql.util.StringUtilities;
+public class DatabaseObjectInfo implements IDatabaseObjectInfo, Serializable {
+    static final long serialVersionUID = -7138016566181091160L;
+    /**
+     * Catalog name. Can be <CODE>null</CODE>
+     */
+    private final String _catalog;
+    /**
+     * Schema name. Can be <CODE>null</CODE>
+     */
+    private final String _schema;
+    /**
+     * Simple object name.
+     */
+    private final String _simpleName;
+    /**
+     * Fully qualified name for this object.
+     */
+    private final String _qualifiedName;
+    /**
+     * Object type. @see DatabaseObjectType.
+     */
+    private DatabaseObjectType _dboType = DatabaseObjectType.OTHER;
 
-public class DatabaseObjectInfo implements IDatabaseObjectInfo, Serializable
-{
-   /** Property names for this bean. */
-   public interface IPropertyNames
-   {
-      /** Catalog name. */
-      String CATALOG_NAME = "catalogName";
+    public DatabaseObjectInfo(String catalog, String schema, String simpleName,
+                              DatabaseObjectType dboType, SQLDatabaseMetaData md) {
+        super();
+        if (dboType == null) {
+            throw new IllegalArgumentException("DatabaseObjectType == null");
+        }
+        if (md == null) {
+            throw new IllegalArgumentException("SQLDatabaseMetaData == null");
+        }
 
-      /** Schema name. */
-      String SCHEMA_NAME = "schemaName";
+        _catalog = catalog;
+        _schema = schema;
+        _simpleName = simpleName;
+        _qualifiedName = generateQualifiedName(md);
+        _dboType = dboType;
+    }
 
-      /** Simple name. */
-      String SIMPLE_NAME = "simpleName";
+    /**
+     * Default constructor for using instances of this class to contain
+     * information about new objects that will be created soon.
+     */
+    public DatabaseObjectInfo(String catalog, String schema, String simpleName) {
+        _catalog = catalog;
+        _schema = schema;
+        _simpleName = simpleName;
+        _qualifiedName = simpleName;
+    }
 
-      /** Qualified name. */
-      String QUALIFIED_NAME = "qualifiedName";
-   }
+    public String toString() {
+        return getSimpleName();
+    }
 
-   static final long serialVersionUID = -7138016566181091160L;
+    public String getCatalogName() {
+        return _catalog;
+    }
 
-/** Catalog name. Can be <CODE>null</CODE> */
-   private final String _catalog;
+    public String getSchemaName() {
+        return _schema;
+    }
 
-   /** Schema name. Can be <CODE>null</CODE> */
-   private final String _schema;
+    public String getSimpleName() {
+        return _simpleName;
+    }
 
-   /** Simple object name. */
-   private final String _simpleName;
+    public String getQualifiedName() {
+        return _qualifiedName;
+    }
 
-   /** Fully qualified name for this object. */
-   private final String _qualifiedName;
+    public DatabaseObjectType getDatabaseObjectType() {
+        return _dboType;
+    }
 
-   /** Object type. @see DatabaseObjectType.*/
-   private DatabaseObjectType _dboType = DatabaseObjectType.OTHER;
+    protected String generateQualifiedName(SQLConnection conn) {
+        return generateQualifiedName(conn.getSQLMetaData());
+    }
 
-   public DatabaseObjectInfo(String catalog, String schema, String simpleName,
-                             DatabaseObjectType dboType, SQLDatabaseMetaData md)
-   {
-      super();
-      if (dboType == null)
-      {
-         throw new IllegalArgumentException("DatabaseObjectType == null");
-      }
-      if (md == null)
-      {
-         throw new IllegalArgumentException("SQLDatabaseMetaData == null");
-      }
+    private boolean isInformix(SQLDatabaseMetaData md) {
+        boolean result = false;
+        try {
+            if (md.getDatabaseProductName().toLowerCase().contains("informix")) {
+                result = true;
+            }
+        } catch (SQLException e) {
+            // Ignore
+        }
+        return result;
+    }
 
-      _catalog = catalog;
-      _schema = schema;
-      _simpleName = simpleName;
-      _qualifiedName = generateQualifiedName(md);
-      _dboType = dboType;
-   }
+    /**
+     * Informix represents database objects in catalogs *and* schemas.  So a table
+     * called <table> might be found in the <databasename> catalog, which lives in
+     * the <schemaname> schema and is addressed as:
+     *
+     * <databasename>:"<schemaname>".<table>
+     * <p>
+     * It may also be referred to as simply <table>
+     * <p>
+     * This method returns a qualifed name that meets this criteria.
+     *
+     * @return a valid Informix qualified name - if catalog *and* schema are not
+     * null/empty, this returns the database object name such as
+     * catalog:schema.simpleName.  However, if either catalog or schema
+     * (or both) are null, this simply returns the simpleName
+     */
+    private String getInformixQualifiedName() {
+        StringBuffer result = new StringBuffer();
+        if (_catalog != null && _schema != null) {
+            result.append(_catalog);
+            result.append(":");
+            result.append("\"");
+            result.append(_schema);
+            result.append("\"");
+            result.append(".");
+        }
+        result.append(_simpleName);
+        return result.toString();
+    }
 
-   /**
-    * Default constructor for using instances of this class to contain 
-    * information about new objects that will be created soon.
-    */
-   public DatabaseObjectInfo(String catalog, String schema, String simpleName) {
-       _catalog = catalog;
-       _schema = schema;
-       _simpleName = simpleName;
-       _qualifiedName = simpleName;
-   }
-   
-    
-public String toString()
-   {
-      return getSimpleName();
-   }
+    protected String generateQualifiedName(SQLDatabaseMetaData md) {
+        String catSep = null;
+        String identifierQuoteString = null;
+        boolean supportsSchemasInDataManipulation = false;
+        boolean supportsCatalogsInDataManipulation = false;
 
-   public String getCatalogName()
-   {
-      return _catalog;
-   }
+        // check for Informix - it has very "special" qualified names
+        if (isInformix(md)) {
+            return getInformixQualifiedName();
+        }
 
+        try {
+            supportsSchemasInDataManipulation = md.supportsSchemasInDataManipulation();
+        } catch (SQLException ignore) {
+            // Ignore.
+        }
+        try {
+            supportsCatalogsInDataManipulation = md.supportsCatalogsInDataManipulation();
+        } catch (SQLException ignore) {
+            // Ignore.
+        }
 
-   public String getSchemaName()
-   {
-      return _schema;
-   }
-
-   public String getSimpleName()
-   {
-      return _simpleName;
-   }
-
-   public String getQualifiedName()
-   {
-      return _qualifiedName;
-   }
-
-   public DatabaseObjectType getDatabaseObjectType()
-   {
-      return _dboType;
-   }
-
-   protected String generateQualifiedName(SQLConnection conn)
-   {
-      return generateQualifiedName(conn.getSQLMetaData());
-   }
-
-   private boolean isInformix(SQLDatabaseMetaData md) {
-       boolean result = false;
-       try {
-           if (md.getDatabaseProductName().toLowerCase().contains("informix")) {
-               result = true;
-           } 
-       } catch (SQLException e) {
-           // Ignore
-       }
-       return result;
-   }
-   
-   /**
-    * Informix represents database objects in catalogs *and* schemas.  So a table
-    * called <table> might be found in the <databasename> catalog, which lives in 
-    * the <schemaname> schema and is addressed as:
-    * 
-    * <databasename>:"<schemaname>".<table>
-    * 
-    * It may also be referred to as simply <table>
-    * 
-    * This method returns a qualifed name that meets this criteria. 
-    * 
-    * @return a valid Informix qualified name - if catalog *and* schema are not
-    *         null/empty, this returns the database object name such as
-    *         catalog:schema.simpleName.  However, if either catalog or schema
-    *         (or both) are null, this simply returns the simpleName
-    */
-   private String getInformixQualifiedName() {
-       StringBuffer result = new StringBuffer();
-       if (_catalog != null && _schema != null) {
-           result.append(_catalog);
-           result.append(":");
-           result.append("\"");
-           result.append(_schema);
-           result.append("\"");
-           result.append(".");
-       }
-       result.append(_simpleName);
-       return result.toString();
-   }
-   
-   protected String generateQualifiedName(SQLDatabaseMetaData md)
-   {
-      String catSep = null;
-      String identifierQuoteString = null;
-      boolean supportsSchemasInDataManipulation = false;
-      boolean supportsCatalogsInDataManipulation = false;
-
-      // check for Informix - it has very "special" qualified names
-      if (isInformix(md)) {
-          return getInformixQualifiedName();
-      }
-      
-      try
-      {
-         supportsSchemasInDataManipulation = md.supportsSchemasInDataManipulation();
-      }
-      catch (SQLException ignore)
-      {
-         // Ignore.
-      }
-      try
-      {
-          supportsCatalogsInDataManipulation = md.supportsCatalogsInDataManipulation();
-      }
-      catch (SQLException ignore)
-      {
-         // Ignore.
-      }
-      
-      try
-      {
+        try {
 //         if (supportsCatalogsInDataManipulation)
 //         {
             catSep = md.getCatalogSeparator();
 //         }
-      }
-      catch (SQLException ignore)
-      {
-         // Ignore.
-      }
-      
-      
-      if (StringUtilities.isEmpty(catSep))
-      {
-          catSep = ".";
-      }
-    		  
-      try
-      {
-         identifierQuoteString = md.getIdentifierQuoteString();
-         if (identifierQuoteString != null
-            && identifierQuoteString.equals(" "))
-         {
-            identifierQuoteString = null;
-         }
-      }
-      catch (SQLException ignore)
-      {
-         // Ignore.
-      }
+        } catch (SQLException ignore) {
+            // Ignore.
+        }
 
-      StringBuffer buf = new StringBuffer();
-      //if (catSep != null
-      //   && catSep.length() > 0
-      //&& _catalog != null
-      //&& _catalog.length() > 0)
-      if (supportsCatalogsInDataManipulation
-    	&& !StringUtilities.isEmpty(_catalog))	  
-      {
-         if (identifierQuoteString != null)
-         {
-            buf.append(identifierQuoteString);
-         }
-         buf.append(_catalog);
-         if (identifierQuoteString != null)
-         {
-            buf.append(identifierQuoteString);
-         }
-         buf.append(catSep);
-      }
 
-      if (supportsSchemasInDataManipulation && _schema != null
-         && _schema.length() > 0)
-      {
-         if (identifierQuoteString != null)
-         {
-            buf.append(identifierQuoteString);
-         }
-         buf.append(_schema);
-         if (identifierQuoteString != null)
-         {
-            buf.append(identifierQuoteString);
-         }
-         
-         //buf.append(".");
-         buf.append(catSep);
-      }
+        if (StringUtilities.isEmpty(catSep)) {
+            catSep = ".";
+        }
 
-      if (identifierQuoteString != null)
-      {
-         buf.append(identifierQuoteString);
-      }
-      buf.append(_simpleName);
-      if (identifierQuoteString != null)
-      {
-         buf.append(identifierQuoteString);
-      }
-      return buf.toString();
-   }
-
-   public boolean equals(Object obj)
-   {
-      if (obj instanceof DatabaseObjectInfo)
-      {
-         DatabaseObjectInfo info = (DatabaseObjectInfo) obj;
-         if ((info._catalog == null && _catalog == null)
-            || ((info._catalog != null && _catalog != null)
-               && info._catalog.equals(_catalog)))
-         {
-            if ((info._qualifiedName == null && _qualifiedName == null)
-               || ((info._qualifiedName != null && _qualifiedName != null)
-                  && info._qualifiedName.equals(_qualifiedName)))
-            {
-               if ((info._schema == null && _schema == null)
-                  || ((info._schema != null && _schema != null)
-                     && info._schema.equals(_schema)))
-               {
-                  return (
-                     (info._simpleName == null && _simpleName == null)
-                        || ((info._simpleName != null
-                           && _simpleName != null)
-                           && info._simpleName.equals(_simpleName)));
-               }
-
+        try {
+            identifierQuoteString = md.getIdentifierQuoteString();
+            if (identifierQuoteString != null
+                    && identifierQuoteString.equals(" ")) {
+                identifierQuoteString = null;
             }
-         }
-      }
-      return false;
-   }
+        } catch (SQLException ignore) {
+            // Ignore.
+        }
 
-   public int hashCode()
-   {
-      return _qualifiedName.hashCode();
-   }
+        StringBuffer buf = new StringBuffer();
+        //if (catSep != null
+        //   && catSep.length() > 0
+        //&& _catalog != null
+        //&& _catalog.length() > 0)
+        if (supportsCatalogsInDataManipulation
+                && !StringUtilities.isEmpty(_catalog)) {
+            if (identifierQuoteString != null) {
+                buf.append(identifierQuoteString);
+            }
+            buf.append(_catalog);
+            if (identifierQuoteString != null) {
+                buf.append(identifierQuoteString);
+            }
+            buf.append(catSep);
+        }
 
-   public int compareTo(Object o)
-   {
-      DatabaseObjectInfo other = (DatabaseObjectInfo) o;
-      return _qualifiedName.compareTo(other._qualifiedName);
-   }
+        if (supportsSchemasInDataManipulation && _schema != null
+                && _schema.length() > 0) {
+            if (identifierQuoteString != null) {
+                buf.append(identifierQuoteString);
+            }
+            buf.append(_schema);
+            if (identifierQuoteString != null) {
+                buf.append(identifierQuoteString);
+            }
+
+            //buf.append(".");
+            buf.append(catSep);
+        }
+
+        if (identifierQuoteString != null) {
+            buf.append(identifierQuoteString);
+        }
+        buf.append(_simpleName);
+        if (identifierQuoteString != null) {
+            buf.append(identifierQuoteString);
+        }
+        return buf.toString();
+    }
+
+    public boolean equals(Object obj) {
+        if (obj instanceof DatabaseObjectInfo) {
+            DatabaseObjectInfo info = (DatabaseObjectInfo) obj;
+            if ((info._catalog == null && _catalog == null)
+                    || ((info._catalog != null && _catalog != null)
+                    && info._catalog.equals(_catalog))) {
+                if ((info._qualifiedName == null && _qualifiedName == null)
+                        || ((info._qualifiedName != null && _qualifiedName != null)
+                        && info._qualifiedName.equals(_qualifiedName))) {
+                    if ((info._schema == null && _schema == null)
+                            || ((info._schema != null && _schema != null)
+                            && info._schema.equals(_schema))) {
+                        return (
+                                (info._simpleName == null && _simpleName == null)
+                                        || ((info._simpleName != null
+                                        && _simpleName != null)
+                                        && info._simpleName.equals(_simpleName)));
+                    }
+
+                }
+            }
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return _qualifiedName.hashCode();
+    }
+
+    public int compareTo(Object o) {
+        DatabaseObjectInfo other = (DatabaseObjectInfo) o;
+        return _qualifiedName.compareTo(other._qualifiedName);
+    }
+
+    /**
+     * Property names for this bean.
+     */
+    public interface IPropertyNames {
+        /**
+         * Catalog name.
+         */
+        String CATALOG_NAME = "catalogName";
+
+        /**
+         * Schema name.
+         */
+        String SCHEMA_NAME = "schemaName";
+
+        /**
+         * Simple name.
+         */
+        String SIMPLE_NAME = "simpleName";
+
+        /**
+         * Qualified name.
+         */
+        String QUALIFIED_NAME = "qualifiedName";
+    }
 }

@@ -6,12 +6,11 @@ package com.riversql.id;
  *
  * @author <A HREF="mailto:colbell@users.sourceforge.net">Colin Bell</A>
  */
-public interface IIdentifierFactory
-{
-	/**
-	 * Create a new identifier.
-	 *
-	 * @return	The new identifier object.
-	 */
-	IIdentifier createIdentifier();
+public interface IIdentifierFactory {
+    /**
+     * Create a new identifier.
+     *
+     * @return The new identifier object.
+     */
+    IIdentifier createIdentifier();
 }

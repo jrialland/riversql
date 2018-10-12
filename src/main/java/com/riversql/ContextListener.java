@@ -1,4 +1,3 @@
-
 package com.riversql;
 
 import com.riversql.dao.DriversDAO;
@@ -22,6 +21,14 @@ public class ContextListener implements ServletContextListener {
     private static final String PU_NAME = "riversql";
 
     private static EntityManagerFactory emf;
+
+    public static EntityManagerFactory getEntityManagerFactory() {
+        return emf;
+    }
+
+    public static void setEntityManagerFactory(EntityManagerFactory emf) {
+        ContextListener.emf = emf;
+    }
 
     public void contextDestroyed(ServletContextEvent sce) {
         EntityManagerFactory emf = (EntityManagerFactory) sce.getServletContext().getAttribute("emf");
@@ -60,13 +67,5 @@ public class ContextListener implements ServletContextListener {
             throw new IllegalStateException(e);
         }
         sc.setAttribute("riversql_version", sc.getInitParameter("riversql_version"));
-    }
-
-    public static void setEntityManagerFactory(EntityManagerFactory emf) {
-        ContextListener.emf = emf;
-    }
-
-    public static EntityManagerFactory getEntityManagerFactory() {
-        return emf;
     }
 }

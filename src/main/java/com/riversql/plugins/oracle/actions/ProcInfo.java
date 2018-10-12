@@ -10,6 +10,7 @@ import org.json.JSONObject;
 import com.riversql.IDManager;
 import com.riversql.plugin.BasePluginType;
 import com.riversql.plugins.oracle.ProcedureNode;
+import org.slf4j.LoggerFactory;
 
 
 public class ProcInfo {
@@ -65,7 +66,7 @@ public class ProcInfo {
 			}
 			
   		}catch(Exception e){
-  			e.printStackTrace();
+  			LoggerFactory.getLogger(getClass()).error("error", e);;
   		}finally{
   			try{if(rs!=null)
   				rs.close();

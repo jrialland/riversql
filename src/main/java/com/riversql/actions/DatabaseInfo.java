@@ -1,34 +1,24 @@
-
 package com.riversql.actions;
 
-import java.sql.SQLException;
-import java.util.List;
+import com.riversql.IDManager;
+import com.riversql.JSONDispatchAction;
+import com.riversql.dbtree.*;
+import com.riversql.sql.SQLConnection;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import com.riversql.IDManager;
-import com.riversql.JSONAction;
-import com.riversql.JSONDispatchAction;
-import com.riversql.dbtree.CatalogNode;
-import com.riversql.dbtree.IStructureNode;
-import com.riversql.dbtree.SQLSession;
-import com.riversql.dbtree.TableNode;
-import com.riversql.dbtree.TablesNode;
-import com.riversql.sql.SQLConnection;
-
-
+import java.sql.SQLException;
+import java.util.List;
 
 
 public class DatabaseInfo extends JSONDispatchAction {
 
-    String id=null;
+    String id = null;
     String catalogName;
     String tableName;
 
@@ -45,84 +35,75 @@ public class DatabaseInfo extends JSONDispatchAction {
     }
 
     public JSONObject getTables(HttpServletRequest request,
-            HttpServletResponse response, EntityManager em, EntityTransaction et)
+                                HttpServletResponse response, EntityManager em, EntityTransaction et)
             throws Exception {
-        SQLSession sqlsession=(SQLSession)IDManager.get().get(id);
+        SQLSession sqlsession = (SQLSession) IDManager.get().get(id);
         SQLConnection conn = sqlsession.getConn();
 
         TablesNode tablesNode = getTablesNode(conn);
         JSONArray tablesNameList = getTablesName(tablesNode);
 
-        JSONObject ret=new JSONObject();
-        ret.put("tables",tablesNameList);
+        JSONObject ret = new JSONObject();
+        ret.put("tables", tablesNameList);
         return ret;
     }
 
     public JSONObject getColumns(HttpServletRequest request,
-            HttpServletResponse response, EntityManager em, EntityTransaction et)
+                                 HttpServletResponse response, EntityManager em, EntityTransaction et)
             throws Exception {
-        SQLSession sqlsession=(SQLSession)IDManager.get().get(id);
+        SQLSession sqlsession = (SQLSession) IDManager.get().get(id);
         SQLConnection conn = sqlsession.getConn();
 
         TablesNode tablesNode = getTablesNode(conn);
         TableNode tableNode = getTableNode(tablesNode);
         List<String> cols = tableNode.getColumnNames();
-        JSONArray arr=new JSONArray();
-        for(int i=0;i<cols.size();i++){
+        JSONArray arr = new JSONArray();
+        for (int i = 0; i < cols.size(); i++) {
             //arr.put(cols.get(i));
-            JSONObject obj=new JSONObject();
-            obj.put("cname",cols.get(i));
+            JSONObject obj = new JSONObject();
+            obj.put("cname", cols.get(i));
             arr.put(obj);
         }
-        JSONObject ret=new JSONObject();
-        ret.put("columns",arr);
+        JSONObject ret = new JSONObject();
+        ret.put("columns", arr);
         return ret;
     }
 
-    private TablesNode getTablesNode(SQLConnection conn) throws SQLException
-    {
-        CatalogNode catalogNode = new CatalogNode( catalogName, conn, false);
+    private TablesNode getTablesNode(SQLConnection conn) throws SQLException {
+        CatalogNode catalogNode = new CatalogNode(catalogName, conn, false);
         catalogNode.nodeLoad();
 
         List<IStructureNode> tablesList = catalogNode.getChildren();
         TablesNode tablesNode = null;
 
-        for(int i=0;i<tablesList.size();i++)
-        {
-            //System.out.println("Tables:"+tablesList.get(i).getName()+tablesList.get(i).getQualifiedName()+tablesList.get(i).getType());
-            if(tablesList.get(i).getName().equalsIgnoreCase("TABLE"))
-            {
+        for (int i = 0; i < tablesList.size(); i++) {
+            if (tablesList.get(i).getName().equalsIgnoreCase("TABLE")) {
                 tablesNode = (TablesNode) tablesList.get(i);
             }
         }
         return tablesNode;
     }
 
-    private TableNode getTableNode(TablesNode tablesNode) throws SQLException
-    {
+    private TableNode getTableNode(TablesNode tablesNode) throws SQLException {
         tablesNode.nodeLoad();
         List<IStructureNode> tableList = tablesNode.getChildren();
         TableNode tableNode = null;
 
-        for(int i=0;i<tableList.size();i++)
-        {
-            if(tableList.get(i).getName().equalsIgnoreCase(tableName))
-            {
+        for (int i = 0; i < tableList.size(); i++) {
+            if (tableList.get(i).getName().equalsIgnoreCase(tableName)) {
                 tableNode = (TableNode) tableList.get(i);
             }
         }
         return tableNode;
     }
 
-    private JSONArray getTablesName(TablesNode tablesNode) throws SQLException, JSONException
-    {
+    private JSONArray getTablesName(TablesNode tablesNode) throws SQLException, JSONException {
         tablesNode.nodeLoad();
         List<IStructureNode> tableList = tablesNode.getChildren();
         JSONArray tablesNameList = new JSONArray();
 
-        for(int i=0;i<tableList.size();i++)
-        {
-            JSONObject tablename=new JSONObject();
+        for (int i = 0; i < tableList.size(); i++) {
+            JSONObject tablename = new JSONObject();
             tablename.put("tablename", tableList.get(i).getName());
             tablesNameList.put(tablename);
         }

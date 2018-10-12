@@ -2,167 +2,156 @@ package com.riversql.sql;
 
 import java.io.Serializable;
 import java.sql.DriverPropertyInfo;
+
 /**
  * This represents a property that can be specified when connecting to the database.
  *
- * @author  <A HREF="mailto:colbell@users.sourceforge.net">Colin Bell</A>
+ * @author <A HREF="mailto:colbell@users.sourceforge.net">Colin Bell</A>
  */
-public class SQLDriverProperty implements Cloneable, Serializable
-{
+public class SQLDriverProperty implements Cloneable, Serializable {
     static final long serialVersionUID = -5150608132930417454L;
-    
-	/** Property names for this bean. */
-	public interface IPropertyNames
-	{
-		/** Property Name. */
-		String NAME = "name";
+    /**
+     * Name.
+     */
+    private String _name;
+    /**
+     * Value associated with the name.
+     */
+    private String _value;
+    /**
+     * If <TT>true</TT> then this property is to be used.
+     */
+    private boolean _isSpecified;
+    private transient DriverPropertyInfo _driverPropInfo;
 
-		/** Property value. */
-		String VALUE = "value";
+    /**
+     * Default ctor. Created with the name and value being <TT>null</TT>.
+     */
+    public SQLDriverProperty() {
+        super();
+    }
 
-		/** Is specified. */
-		String IS_SPECIFIED = "isSpecified";
-	}
+    /**
+     * Create from a <TT>DriverPropertyInfo</TT> object.
+     */
+    public SQLDriverProperty(DriverPropertyInfo parm) {
+        super();
+        if (parm == null) {
+            throw new IllegalArgumentException("DriverPropertyInfo == null");
+        }
 
-    /** Name. */
-	private String _name;
+        setName(parm.name);
+        setValue(parm.value);
+        setDriverPropertyInfo(parm);
+    }
 
-	/** Value associated with the name. */
-	private String _value;
+    /**
+     * ctor specifying the name and value.
+     *
+     * @param    name    The name
+     * @param    value    The value associated with the name.
+     */
+    public SQLDriverProperty(String name, String value) {
+        super();
+        _name = name;
+        _value = value;
+    }
 
-	/** If <TT>true</TT> then this property is to be used. */
-	private boolean _isSpecified;
+    /**
+     * Return a clone of this object.
+     *
+     * @return The cloned object.
+     */
+    public Object clone() {
+        try {
+            return super.clone();
+        } catch (CloneNotSupportedException ex) {
+            throw new InternalError(ex.getMessage()); // Impossible.
+        }
+    }
 
-	private transient DriverPropertyInfo _driverPropInfo;
+    /**
+     * Retrieve the name.
+     *
+     * @return The name.
+     */
+    public String getName() {
+        return _name;
+    }
 
-	/**
-	 * Default ctor. Created with the name and value being <TT>null</TT>.
-	 */
-	public SQLDriverProperty()
-	{
-		super();
-	}
+    /**
+     * Set the name.
+     *
+     * @param    name    The name.
+     */
+    public synchronized void setName(String name) {
+        _name = name;
+        if (_driverPropInfo != null) {
+            _driverPropInfo.name = name;
+        }
+    }
 
-	/**
-	 * Create from a <TT>DriverPropertyInfo</TT> object.
-	 */
-	public SQLDriverProperty(DriverPropertyInfo parm)
-	{
-		super();
-		if (parm == null)
-		{
-			throw new IllegalArgumentException("DriverPropertyInfo == null");
-		}
-	
-		setName(parm.name);
-		setValue(parm.value);
-		setDriverPropertyInfo(parm);	
-	}
+    /**
+     * Retrieve the value.
+     *
+     * @return The value.
+     */
+    public String getValue() {
+        return _value;
+    }
 
-	/**
-	 * ctor specifying the name and value.
-	 *
-	 * @param	name	The name
-	 * @param	value	The value associated with the name.
-	 */
-	public SQLDriverProperty(String name, String value)
-	{
-		super();
-		_name = name;
-		_value = value;
-	}
+    /**
+     * Set the value.
+     *
+     * @param    value    The value.
+     */
+    public synchronized void setValue(String value) {
+        _value = value;
+        if (_driverPropInfo != null) {
+            _driverPropInfo.value = value;
+        }
+    }
 
-	/**
-	 * Return a clone of this object.
-	 *
-	 * @return	The cloned object.
-	 */
-	public Object clone()
-	{
-		try
-		{
-			return super.clone();
-		}
-		catch (CloneNotSupportedException ex)
-		{
-			throw new InternalError(ex.getMessage()); // Impossible.
-		}
-	}
+    public boolean isSpecified() {
+        return _isSpecified;
+    }
 
-	/**
-	 * Retrieve the name.
-	 *
-	 * @return	The name.
-	 */
-	public String getName()
-	{
-		return _name;
-	}
+    public DriverPropertyInfo getDriverPropertyInfo() {
+        return _driverPropInfo;
+    }
 
-	/**
-	 * Retrieve the value.
-	 *
-	 * @return	The value.
-	 */
-	public String getValue()
-	{
-		return _value;
-	}
+    public void setDriverPropertyInfo(DriverPropertyInfo parm) {
+        if (parm != null) {
+            if (!parm.name.equals(getName())) {
+                throw new IllegalArgumentException("DriverPropertyInfo.name != my name");
+            }
+        }
+        _driverPropInfo = parm;
+        _driverPropInfo.value = _value;
+    }
 
-	public boolean isSpecified()
-	{
-		return _isSpecified;
-	}
+    public void setIsSpecified(boolean value) {
+        _isSpecified = value;
+    }
 
-	public DriverPropertyInfo getDriverPropertyInfo()
-	{
-		return _driverPropInfo;
-	}
+    /**
+     * Property names for this bean.
+     */
+    public interface IPropertyNames {
+        /**
+         * Property Name.
+         */
+        String NAME = "name";
 
-	/**
-	 * Set the name.
-	 *
-	 * @param	name	The name.
-	 */
-	public synchronized void setName(String name)
-	{
-		_name = name;
-		if (_driverPropInfo != null)
-		{
-			_driverPropInfo.name = name;
-		}
-	}
+        /**
+         * Property value.
+         */
+        String VALUE = "value";
 
-	/**
-	 * Set the value.
-	 *
-	 * @param	value	The value.
-	 */
-	public synchronized void setValue(String value)
-	{
-		_value = value;
-		if (_driverPropInfo != null)
-		{
-			_driverPropInfo.value = value;
-		}
-	}
-
-	public void setIsSpecified(boolean value)
-	{
-		_isSpecified = value;
-	}
-
-	public void setDriverPropertyInfo(DriverPropertyInfo parm)
-	{
-		if (parm != null)
-		{
-			if (!parm.name.equals(getName()))
-			{
-				throw new IllegalArgumentException("DriverPropertyInfo.name != my name");
-			}
-		}
-		_driverPropInfo = parm;
-		_driverPropInfo.value = _value;
-	}
+        /**
+         * Is specified.
+         */
+        String IS_SPECIFIED = "isSpecified";
+    }
 }
 

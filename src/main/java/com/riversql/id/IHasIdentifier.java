@@ -1,6 +1,5 @@
 package com.riversql.id;
 
-public interface IHasIdentifier
-{
-	IIdentifier getIdentifier();
+public interface IHasIdentifier {
+    IIdentifier getIdentifier();
 }

@@ -1,4 +1,3 @@
-
 package com.riversql.databases;
 
 
@@ -6,7 +5,7 @@ public class InformixDialect
         implements IDialect {
 
     public boolean supportsDatabase(String databaseProductName,
-            String databaseProductVersion) {
+                                    String databaseProductVersion) {
         if (databaseProductName == null) {
             return false;
         }
@@ -17,6 +16,5 @@ public class InformixDialect
         return false;
     }
 
- 
 
 }

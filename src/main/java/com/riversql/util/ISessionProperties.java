@@ -21,7 +21,7 @@ package com.riversql.util;
 /**
  * An interface to allow fw class SQLConnectionState to access SessionProperties
  * indirectly.
- * 
+ *
  * @author manningr
  */
 public interface ISessionProperties {

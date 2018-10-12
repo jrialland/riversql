@@ -52,7 +52,7 @@ public class GetUserPrivileges {
 				data.put(record);
 			}
 		} catch (SQLException e) {
-			//e.printStackTrace();
+			//LoggerFactory.getLogger(getClass()).error("error", e);;
 		}finally{
 			try {if(rs!=null)
 				rs.close();

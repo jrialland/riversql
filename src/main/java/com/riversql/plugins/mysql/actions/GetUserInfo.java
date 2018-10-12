@@ -14,9 +14,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
+
 import com.riversql.sql.SQLConnection;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -163,9 +166,7 @@ public class GetUserInfo extends GetJSONObjectBase{
                     userlimits.put(userLimitsObject);
                 }
             } catch (SQLException e) {
-                e.printStackTrace();
-                //System.out.println(e.getMessage());
-                //System.out.println(e.toString());
+                LoggerFactory.getLogger(getClass()).error("error", e);
             }finally{
                 try {if(rs!=null)
                         rs.close();

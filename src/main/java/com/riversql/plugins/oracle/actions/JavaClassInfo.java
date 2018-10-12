@@ -4,15 +4,21 @@ package com.riversql.plugins.oracle.actions;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import com.riversql.actions.export.impl.ExcelTableExporter;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import com.riversql.IDManager;
 import com.riversql.plugin.BasePluginType;
 import com.riversql.plugins.oracle.JavaClassNode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 public class JavaClassInfo {
+
+	private static final Logger LOGGER  = LoggerFactory.getLogger(ExcelTableExporter.class);
+
 	String id;
 	public JavaClassInfo(String id) {
 		this.id=id;
@@ -71,7 +77,7 @@ public class JavaClassInfo {
 				
 			}
   		}catch(Exception e){
-  			e.printStackTrace();
+  			LOGGER.error("execute", e);
   		}finally{
   			try{if(rs!=null)
   				rs.close();

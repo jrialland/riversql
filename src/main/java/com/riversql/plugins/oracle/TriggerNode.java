@@ -1,37 +1,35 @@
-
 package com.riversql.plugins.oracle;
 
 
-import com.riversql.sql.SQLConnection;
 import com.riversql.plugin.BasePluginType;
+import com.riversql.sql.SQLConnection;
 
 public class TriggerNode extends BasePluginType {
-	
-	//private String status;
 
-	public TriggerNode(TriggerTypeNode triggerTypeNode, String name,
-			SQLConnection conn, String status) {
-		super(name,triggerTypeNode,conn);
-	//	this.status=status;
-		
-	}
-	
+    //private String status;
 
-	 
-	@Override
-	public void load() {
-	}
+    public TriggerNode(TriggerTypeNode triggerTypeNode, String name,
+                       SQLConnection conn, String status) {
+        super(name, triggerTypeNode, conn);
+        //	this.status=status;
 
-	public String getCls() {
-		return "trg";
-	}
+    }
 
-	public String getType() {
-		return "ora_trig";
-	}
 
-	public boolean isLeaf() {
-		return true;
-	}
+    @Override
+    public void load() {
+    }
+
+    public String getCls() {
+        return "trg";
+    }
+
+    public String getType() {
+        return "ora_trig";
+    }
+
+    public boolean isLeaf() {
+        return true;
+    }
 
 }

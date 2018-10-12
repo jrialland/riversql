@@ -1,6 +1,5 @@
 package com.riversql.persist;
 
-public interface IValidatable
-{
-	boolean isValid();
+public interface IValidatable {
+    boolean isValid();
 }

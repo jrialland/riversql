@@ -1,12 +1,11 @@
-
 package com.riversql.databases;
 
 
-public class HADBDialect  implements IDialect {
+public class HADBDialect implements IDialect {
 
-   
+
     public boolean supportsDatabase(String databaseProductName,
-                                   String databaseProductVersion) {
+                                    String databaseProductVersion) {
         if (databaseProductName == null) {
             return false;
         }
@@ -17,5 +16,5 @@ public class HADBDialect  implements IDialect {
         }
         return false;
     }
-    
+
 }

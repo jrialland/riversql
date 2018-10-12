@@ -10,40 +10,40 @@ import java.util.List;
 //import com.riversql.util.log.ILogger;
 //import com.riversql.util.log.LoggerController;
 
-public class QueryTokenizer implements IQueryTokenizer
-{
-	protected ArrayList<String> _queries = new ArrayList<String>();
-    
-	protected Iterator<String> _queryIterator;
+public class QueryTokenizer implements IQueryTokenizer {
+    protected ArrayList<String> _queries = new ArrayList<String>();
+
+    protected Iterator<String> _queryIterator;
 
     protected String _querySep = null;
-    
+
     protected String _lineCommentBegin = null;
-    
+
     protected boolean _removeMultiLineComment = true;
 
     protected ITokenizerFactory _tokenizerFactory = null;
-    
-    /** Logger for this class. */
+
+    /**
+     * Logger for this class.
+     */
 //    private final static ILogger s_log =
 //        LoggerController.createLogger(QueryTokenizer.class); 
-    
-    public QueryTokenizer() {}
-    
-	public QueryTokenizer(String querySep, 
-                          String lineCommentBegin, 
-                          boolean removeMultiLineComment)
-	{
+    public QueryTokenizer() {
+    }
+
+    public QueryTokenizer(String querySep,
+                          String lineCommentBegin,
+                          boolean removeMultiLineComment) {
         _querySep = querySep;
         _lineCommentBegin = lineCommentBegin;
         _removeMultiLineComment = removeMultiLineComment;
         setFactory();
-	}
+    }
 
     /**
      * Sets the ITokenizerFactory which is used to create additional instances
      * of the IQueryTokenizer - this is used for handling file includes
-     * recursively.  
+     * recursively.
      */
     protected void setFactory() {
         _tokenizerFactory = new ITokenizerFactory() {
@@ -52,82 +52,62 @@ public class QueryTokenizer implements IQueryTokenizer
             }
         };
     }
-    
 
-	private int getLenOfQuerySepIfAtLastCharOfQuerySep(String sql, int i, String querySep, boolean inLiteral)
-	{
-		if(inLiteral)
-		{
-			return -1;
-		}
 
-		char c = sql.charAt(i);
+    private int getLenOfQuerySepIfAtLastCharOfQuerySep(String sql, int i, String querySep, boolean inLiteral) {
+        if (inLiteral) {
+            return -1;
+        }
 
-		if(1 == querySep.length() && c == querySep.charAt(0))
-		{
-			return 1;
-		}
-		else
-		{
-			int fromIndex = i - querySep.length();
-			if(0 > fromIndex)
-			{
-				return -1;
-			}
+        char c = sql.charAt(i);
 
-			int querySepIndex = sql.indexOf(querySep, fromIndex);
+        if (1 == querySep.length() && c == querySep.charAt(0)) {
+            return 1;
+        } else {
+            int fromIndex = i - querySep.length();
+            if (0 > fromIndex) {
+                return -1;
+            }
 
-			if(0 > querySepIndex)
-			{
-				return -1;
-			}
+            int querySepIndex = sql.indexOf(querySep, fromIndex);
 
-			if(Character.isWhitespace(c))
-			{
-				if(querySepIndex + querySep.length() == i)
-				{
-					if(0 == querySepIndex)
-					{
-						return querySep.length() + 1;
-					}
-					else if(Character.isWhitespace(sql.charAt(querySepIndex - 1)))
-					{
-						return querySep.length() + 2;
-					}
-				}
-			}
-			else if(sql.length() -1 == i)
-			{
-				if(querySepIndex + querySep.length() - 1 == i)
-				{
-					if(0 == querySepIndex)
-					{
-						return querySep.length();
-					}
-					else if(Character.isWhitespace(sql.charAt(querySepIndex - 1)))
-					{
-						return querySep.length() + 1;
-					}
-				}
-			}
+            if (0 > querySepIndex) {
+                return -1;
+            }
 
-			return -1;
-		}
-	}
-    
-	public boolean hasQuery()
-	{
-		return _queryIterator.hasNext();
-	}
+            if (Character.isWhitespace(c)) {
+                if (querySepIndex + querySep.length() == i) {
+                    if (0 == querySepIndex) {
+                        return querySep.length() + 1;
+                    } else if (Character.isWhitespace(sql.charAt(querySepIndex - 1))) {
+                        return querySep.length() + 2;
+                    }
+                }
+            } else if (sql.length() - 1 == i) {
+                if (querySepIndex + querySep.length() - 1 == i) {
+                    if (0 == querySepIndex) {
+                        return querySep.length();
+                    } else if (Character.isWhitespace(sql.charAt(querySepIndex - 1))) {
+                        return querySep.length() + 1;
+                    }
+                }
+            }
 
-	public String nextQuery()
-	{
-		return _queryIterator.next();
-	}
+            return -1;
+        }
+    }
+
+    public boolean hasQuery() {
+        return _queryIterator.hasNext();
+    }
+
+    public String nextQuery() {
+        return _queryIterator.next();
+    }
 
     public void setScriptToTokenize(String script) {
         _queries.clear();
-        
+
         String MULTI_LINE_COMMENT_END = "*/";
         String MULTI_LINE_COMMENT_BEGIN = "/*";
 
@@ -141,43 +121,36 @@ public class QueryTokenizer implements IQueryTokenizer
         int literalSepCount = 0;
 
 
-        for (int i = 0; i < script.length(); ++i)
-        {
+        for (int i = 0; i < script.length(); ++i) {
             char c = script.charAt(i);
 
-            if(false == isInLiteral)
-            {
+            if (false == isInLiteral) {
                 ///////////////////////////////////////////////////////////
                 // Handling of comments
 
                 // We look backwards
-                if(isInLineComment && script.startsWith("\n", i - "\n".length()))
-                {
+                if (isInLineComment && script.startsWith("\n", i - "\n".length())) {
                     isInLineComment = false;
                 }
 
                 // We look backwards
-                if(isInMultiLineComment && script.startsWith(MULTI_LINE_COMMENT_END, i - MULTI_LINE_COMMENT_END.length()))
-                {
+                if (isInMultiLineComment && script.startsWith(MULTI_LINE_COMMENT_END, i - MULTI_LINE_COMMENT_END.length())) {
                     isInMultiLineComment = false;
                 }
 
 
-                if(false == isInLineComment && false == isInMultiLineComment)
-                {
+                if (false == isInLineComment && false == isInMultiLineComment) {
                     // We look forward
                     isInMultiLineComment = script.startsWith(MULTI_LINE_COMMENT_BEGIN, i);
                     isInLineComment = script.startsWith(_lineCommentBegin, i);
 
-                    if(isInMultiLineComment && _removeMultiLineComment)
-                    {
+                    if (isInMultiLineComment && _removeMultiLineComment) {
                         // skip ahead so the cursor is now immediately after the begin comment string
-                        i+=MULTI_LINE_COMMENT_BEGIN.length()+1;
+                        i += MULTI_LINE_COMMENT_BEGIN.length() + 1;
                     }
                 }
 
-                if((isInMultiLineComment && _removeMultiLineComment) || isInLineComment)
-                {
+                if ((isInMultiLineComment && _removeMultiLineComment) || isInLineComment) {
                     // This is responsible that comments are not in curQuery
                     continue;
                 }
@@ -187,40 +160,30 @@ public class QueryTokenizer implements IQueryTokenizer
 
             curQuery.append(c);
 
-            if ('\'' == c)
-            {
-                if(false == isInLiteral)
-                {
+            if ('\'' == c) {
+                if (false == isInLiteral) {
                     isInLiteral = true;
-                }
-                else
-                {
+                } else {
                     ++literalSepCount;
                 }
-            }
-            else
-            {
-                if(0 != literalSepCount % 2)
-                {
+            } else {
+                if (0 != literalSepCount % 2) {
                     isInLiteral = false;
                 }
                 literalSepCount = 0;
             }
 
 
-            int querySepLen = 
-                getLenOfQuerySepIfAtLastCharOfQuerySep(script, i, _querySep, isInLiteral);
+            int querySepLen =
+                    getLenOfQuerySepIfAtLastCharOfQuerySep(script, i, _querySep, isInLiteral);
 
-            if(-1 < querySepLen)
-            {
+            if (-1 < querySepLen) {
                 int newLength = curQuery.length() - querySepLen;
-                if(-1 < newLength && curQuery.length() > newLength)
-                {
+                if (-1 < newLength && curQuery.length() > newLength) {
                     curQuery.setLength(newLength);
 
                     String newQuery = curQuery.toString().trim();
-                    if(0 < newQuery.length())
-                    {
+                    if (0 < newQuery.length()) {
                         _queries.add(curQuery.toString().trim());
                     }
                 }
@@ -229,17 +192,16 @@ public class QueryTokenizer implements IQueryTokenizer
         }
 
         String lastQuery = curQuery.toString().trim();
-        if(0 < lastQuery.length())
-        {
+        if (0 < lastQuery.length()) {
             _queries.add(lastQuery.toString().trim());
         }
 
         _queryIterator = _queries.iterator();
     }
-    
+
     /**
-     * Returns the number of queries that the tokenizer found in the script 
-     * given in the last call to setScriptToTokenize, or 0 if 
+     * Returns the number of queries that the tokenizer found in the script
+     * given in the last call to setScriptToTokenize, or 0 if
      * setScriptToTokenize has not yet been called.
      */
     public int getQueryCount() {
@@ -247,26 +209,6 @@ public class QueryTokenizer implements IQueryTokenizer
             return 0;
         }
         return _queries.size();
-    }
-    
-    
-    
-    public static void main(String[] args)
-    {
-        //String sql = "A'''' sss ;  GO ;; GO'";
-        //String sql = "A\n--x\n--y\n/*\nB";
-        //String sql = "GO GO";
-        String sql = "@c:\\tools\\sql\\file.sql";
-        
-        
-        QueryTokenizer qt = new QueryTokenizer("GO", "--", true);
-
-        qt.setScriptToTokenize(sql);
-        
-        while(qt.hasQuery())
-        {
-            System.out.println(">" + qt.nextQuery() + "<");
-        }
     }
 
     /**
@@ -310,13 +252,13 @@ public class QueryTokenizer implements IQueryTokenizer
     public void setRemoveMultiLineComment(boolean multiLineComment) {
         _removeMultiLineComment = multiLineComment;
     }
-    
-    /** 
-     * This uses statements that begin with scriptIncludePrefix to indicate 
-     * that the following text is a filename containing SQL statements that 
-     * should be loaded.   
-     * 
-     * @param scriptIncludePrefix the 
+
+    /**
+     * This uses statements that begin with scriptIncludePrefix to indicate
+     * that the following text is a filename containing SQL statements that
+     * should be loaded.
+     *
+     * @param scriptIncludePrefix    the
      * @param lineCommentBegin
      * @param removeMultiLineComment
      */
@@ -326,7 +268,7 @@ public class QueryTokenizer implements IQueryTokenizer
             return;
         }
         ArrayList<String> tmp = new ArrayList<String>();
-        for (Iterator<String> iter = _queries.iterator(); iter.hasNext();) {
+        for (Iterator<String> iter = _queries.iterator(); iter.hasNext(); ) {
             String sql = iter.next();
             if (sql.startsWith(scriptIncludePrefix)) {
                 try {
@@ -338,17 +280,16 @@ public class QueryTokenizer implements IQueryTokenizer
 //                       "Unexpected error while attempting to include file " +
 //                       "from "+sql, e);
                 }
-                
+
             } else {
                 tmp.add(sql);
             }
         }
         _queries = tmp;
     }
-    
-    protected List<String> getStatementsFromIncludeFile(String filename) 
-        throws Exception 
-    {
+
+    protected List<String> getStatementsFromIncludeFile(String filename)
+            throws Exception {
         ArrayList<String> result = new ArrayList<String>();
 //        if (s_log.isDebugEnabled()) {
 //            s_log.debug("Attemping to open file '"+filename+"'");
@@ -357,35 +298,35 @@ public class QueryTokenizer implements IQueryTokenizer
         /*
         if (f.canRead()) {
         */
-            StringBuffer fileLines = new StringBuffer();
-            try {
-                BufferedReader reader = new BufferedReader(new FileReader(f));
-                String next = reader.readLine();
-                while (next != null) {
-                    fileLines.append(next);
-                    fileLines.append("\n");
-                    next = reader.readLine();
-                }
-            } catch (Exception e) {
+        StringBuffer fileLines = new StringBuffer();
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(f));
+            String next = reader.readLine();
+            while (next != null) {
+                fileLines.append(next);
+                fileLines.append("\n");
+                next = reader.readLine();
+            }
+        } catch (Exception e) {
 //                s_log.error(
 //                    "Unexpected exception while reading lines from file " +
 //                    "("+filename+")", e);
+        }
+        if (fileLines.toString().length() > 0) {
+            IQueryTokenizer qt = null;
+            if (_tokenizerFactory != null) {
+                qt = _tokenizerFactory.getTokenizer();
+            } else {
+                qt = new QueryTokenizer(_querySep,
+                        _lineCommentBegin,
+                        _removeMultiLineComment);
             }
-            if (fileLines.toString().length() > 0) {
-                IQueryTokenizer qt = null;
-                if (_tokenizerFactory != null) {
-                    qt = _tokenizerFactory.getTokenizer();
-                } else {
-                    qt = new QueryTokenizer(_querySep, 
-                                            _lineCommentBegin, 
-                                            _removeMultiLineComment);
-                }
-                qt.setScriptToTokenize(fileLines.toString());
-                while (qt.hasQuery()) {
-                    String sql = qt.nextQuery();
-                    result.add(sql);
-                }
+            qt.setScriptToTokenize(fileLines.toString());
+            while (qt.hasQuery()) {
+                String sql = qt.nextQuery();
+                result.add(sql);
             }
+        }
             /*
         } else {
             s_log.error("Unable to open file: "+filename+" for reading");
@@ -399,6 +340,6 @@ public class QueryTokenizer implements IQueryTokenizer
      */
     public String getSQLStatementSeparator() {
         return _querySep;
-    }    
-    
+    }
+
 }

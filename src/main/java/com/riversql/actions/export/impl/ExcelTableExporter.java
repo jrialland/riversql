@@ -24,8 +24,12 @@ import com.itextpdf.text.Element;
 
 import com.riversql.actions.export.IColumnFormatter;
 import com.riversql.actions.export.ITableExporter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ExcelTableExporter implements ITableExporter {
+
+	private static final Logger LOGGER  = LoggerFactory.getLogger(ExcelTableExporter.class);
 
 	private HSSFWorkbook workbook;
 	private final String qualifiedName;
@@ -178,7 +182,7 @@ public class ExcelTableExporter implements ITableExporter {
 				}
 			}
 		}catch(Exception e){
-			e.printStackTrace();
+			LOGGER.error("configure", e);
 		}
 
 	}

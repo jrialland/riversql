@@ -1,33 +1,32 @@
-
 package com.riversql.plugins.mysql;
 
-import com.riversql.sql.SQLConnection;
 import com.riversql.plugin.BasePluginType;
+import com.riversql.sql.SQLConnection;
 
 public class FunctionNode extends BasePluginType {
 
-	public FunctionNode(FunctionTypeNode functionTypeNode, String name,
-			SQLConnection conn) {
-		super(name,functionTypeNode,conn);
-	}
-	
-	
-	@Override
-	public void load() {
-	}
+    public FunctionNode(FunctionTypeNode functionTypeNode, String name,
+                        SQLConnection conn) {
+        super(name, functionTypeNode, conn);
+    }
 
-	public String getCls() {
-		return "obj";
-	}
 
-	public String getType() {
-		
-		return "mysql_funct";
-	}
+    @Override
+    public void load() {
+    }
 
-	public boolean isLeaf() {
-		
-		return true;
-	}
+    public String getCls() {
+        return "obj";
+    }
+
+    public String getType() {
+
+        return "mysql_funct";
+    }
+
+    public boolean isLeaf() {
+
+        return true;
+    }
 
 }

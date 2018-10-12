@@ -30,8 +30,8 @@ public class CreateDriver implements JSONAction {
                               HttpServletResponse response, EntityManager em, EntityTransaction et)
             throws Exception {
         DriversDAO.addDriver(em, drivername, driverclass, exampleurl);
-        JSONObject obj=new JSONObject();
-        obj.put("success",true);
+        JSONObject obj = new JSONObject();
+        obj.put("success", true);
         return obj;
     }
 }

@@ -1,28 +1,29 @@
-
 package com.riversql.actions;
+
+import com.riversql.IPageAction;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.riversql.IPageAction;
-
 public class SelectTable implements IPageAction {
 
-	String id;
-	String dbid;
-	public void setId(String id) {
-		this.id = id;
-	}
-	public void setDbid(String dbid) {
-		this.dbid = dbid;
-	}
-	 
-	public void execute(HttpServletRequest request,
-			HttpServletResponse response, EntityManager em, EntityTransaction et)
-			throws Exception {
-		
+    String id;
+    String dbid;
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setDbid(String dbid) {
+        this.dbid = dbid;
+    }
+
+    public void execute(HttpServletRequest request,
+                        HttpServletResponse response, EntityManager em, EntityTransaction et)
+            throws Exception {
+
 //		SQLSession sqlsession = (SQLSession)IDManager.get().get(("db"+dbid));
 //		
 //		
@@ -73,6 +74,6 @@ public class SelectTable implements IPageAction {
 //		request.setAttribute("columnNames", columnNames);
 //		request.getRequestDispatcher("/runselect.jsp").forward(request, response);
 
-	}
+    }
 
 }

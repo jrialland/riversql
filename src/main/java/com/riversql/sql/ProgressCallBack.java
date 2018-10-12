@@ -1,7 +1,6 @@
 package com.riversql.sql;
 
-public interface ProgressCallBack
-{
+public interface ProgressCallBack {
 
-   void currentlyLoading(String simpleName);
+    void currentlyLoading(String simpleName);
 }

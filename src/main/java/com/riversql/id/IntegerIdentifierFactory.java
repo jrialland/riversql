@@ -7,36 +7,32 @@ package com.riversql.id;
  *
  * @author <A HREF="mailto:colbell@users.sourceforge.net">Colin Bell</A>
  */
-public class IntegerIdentifierFactory implements IIdentifierFactory
-{
-	private int _next;
+public class IntegerIdentifierFactory implements IIdentifierFactory {
+    private int _next;
 
-	/**
-	 * Default ctor. First identifier generated will have a value of zero.
-	 */
-	public IntegerIdentifierFactory()
-	{
-		this(0);
-	}
+    /**
+     * Default ctor. First identifier generated will have a value of zero.
+     */
+    public IntegerIdentifierFactory() {
+        this(0);
+    }
 
-	/**
-	 * ctor specifying the value of the first identifier.
-	 *
-	 * @param	initialValue	Value for first identifier generated.
-	 */
-	public IntegerIdentifierFactory(int initialValue)
-	{
-		super();
-		_next = initialValue;
-	}
+    /**
+     * ctor specifying the value of the first identifier.
+     *
+     * @param    initialValue    Value for first identifier generated.
+     */
+    public IntegerIdentifierFactory(int initialValue) {
+        super();
+        _next = initialValue;
+    }
 
-	/**
-	 * Create a new identifier.
-	 *
-	 * @return	The new identifier object.
-	 */
-	public synchronized IIdentifier createIdentifier()
-	{
-		return new IntegerIdentifier(_next++);
-	}
+    /**
+     * Create a new identifier.
+     *
+     * @return The new identifier object.
+     */
+    public synchronized IIdentifier createIdentifier() {
+        return new IntegerIdentifier(_next++);
+    }
 }
