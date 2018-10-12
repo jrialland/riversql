@@ -21,7 +21,7 @@ rm ./ROOT -rf
 cp $exploded ./ROOT -R
 
 projectname=$(git config --local remote.origin.url | sed s_^.*github.com/__ | sed s-/-_-)
-
+projectname=$(echo $projectname |sed s/.git//)
 cat > now.json << EOF
 {
     "name": "$projectname",
