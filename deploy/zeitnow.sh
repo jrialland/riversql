@@ -29,5 +29,5 @@ cat > now.json << EOF
 }
 EOF
 
-#now --public --token $NOW_TOKEN && now alias --token $NOW_TOKEN
+now --public --token $NOW_TOKEN && now alias --token $NOW_TOKEN
 
