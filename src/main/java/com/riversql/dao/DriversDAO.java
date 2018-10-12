@@ -3,6 +3,7 @@ package com.riversql.dao;
 import com.riversql.entities.Driver;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 import javax.persistence.Query;
 import java.util.Iterator;
 import java.util.List;
@@ -49,6 +50,9 @@ public class DriversDAO {
         if (count.intValue() > 0) {
             return;
         }
+
+        EntityTransaction tx = em.getTransaction();
+        tx.begin();
 
         Driver drv1 = new Driver();
         drv1.setDriverClassName("oracle.jdbc.OracleDriver");
@@ -236,6 +240,10 @@ public class DriversDAO {
         drv1.setExampleUrl("jdbc:postgresql:[<//host>[:<5432>/]]<database>");
         drv1.setIconUrl("ico/postgresql.ico");
         em.persist(drv1);
+
+        em.flush();
+        tx.commit();
+
     }
 
     public static void addDriver(EntityManager em, String drivername,

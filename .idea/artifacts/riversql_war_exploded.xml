@@ -19,6 +19,10 @@
           <element id="library" level="project" name="Maven: org.json:json:20180813" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.44" />
           <element id="library" level="project" name="Maven: org.hsqldb:hsqldb:2.3.6" />
+          <element id="library" level="project" name="Maven: net.sourceforge.jtds:jtds:1.2.4" />
+          <element id="library" level="project" name="Maven: org.apache.derby:derby:10.14.1.0" />
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.2.0" />
+          <element id="library" level="project" name="Maven: com.h2database:h2:1.4.193" />
           <element id="library" level="project" name="Maven: com.yahoo.platform.yui:yuicompressor:2.4.8" />
           <element id="library" level="project" name="Maven: rhino:js:1.7R2" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
